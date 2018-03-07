@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>搜索</title>
+	<script src="../js/uikit.min.js" type="text/javascript"></script>
+	<script src="../js/uikit.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/uikit.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/search.css">
+	<script src="../js/quit.js" type="text/javascript"></script>
+	<style type="text/css">
+		@media screen and (max-width:1024px){
+			#nav-item ul li{
+				width:100px;
+				height:60px;
+				font-size:16px;
+				color:white;
+			}
+			#search-warp,#course-body{
+				position: relative;
+				top:8%;
+			}
+			#search-more{
+				position: relative;
+				top:6%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="navigation">
+			<div id="logo"><img src="../images/logo.png"></div>
+			<div id="nav-item">
+				<ul>
+					<li><a href="home page.html">首页</a></li>
+					<li><a href="online-classify.html">线上培训</a></li>
+					<li><a href="training-registration.html">线下培训</a></li>
+					<li><a href="online-test.html">我的考试</a></li>
+					<li><a href="inform-undeal.html">我的通知</a></li>
+				</ul>
+			</div>
+			<div id="nav-pic" data-uk-dropdown>
+				<div id="nav-head"></div>
+				<div id="nav-quit" class="uk-dropdown uk-dropdown-small">
+					<ul>
+						<li><a href="">个人中心</a></li>
+						<li><a href="">内训师回答</a></li>
+						<li><a href="">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="searchall">
+			<div id="searchbox">
+				<i><img src="../images/search2.png"></i>
+				<input type="text" name="search-text" id="search-text">
+				<input type="submit" name="search-button" value="搜索" id="search-button">
+			</div>
+			<div id="small-label">
+				<ul>
+					<li>热门搜索：</li>
+					<li>C</li>
+					<li>PHP</li>
+					<li>JAVA</li>
+					<li>javascript</li>
+					<li>mysql</li>
+					<li>ajax</li>
+				</ul>
+			</div>
+		</div>
+		<div id="search-warp">
+			<div id="search-nav">
+				<a href="#">全站</a>
+			</div>
+			<div id="search-related">共找到2366个相关内容</div>
+			<h2>课程</h2>
+		</div>
+		<div id="course-body">
+			<div class="course-item" class="uk-grid">
+				<div id="item-left" class="uk-width-1-2 uk-width-medium-1-2"><a href="online-catalog.html"><img src="../images/coursepic1.png"></a></div>
+				<div id="item-right" class="uk-width-1-2 uk-width-medium-1-2p">
+					<div id="course-item-title">[课程]玩转<span>Bootstrap</span>基础篇</div>
+					<div>Bootstrap    2000人学习</div>
+					<div><p>课程简介： 本Bootstrap教程能够让您了解到，Bootstrap框架是一个非常受欢迎
+					的前端开发框架，他能让后端程序员和不懂设计的前端人员制作出优美的Web页
+					面或Web应用程序。在这个Bootstrap教程中</p></div>
+				</div>
+			</div>
+			<div class="course-item" class="uk-grid">
+				<div id="item-left" class="uk-width-1-2 uk-width-medium-1-2"><a href="online-catalog.html"><img src="../images/coursepic2.png"></a></div>
+				<div id="item-right" class="uk-width-1-2 uk-width-medium-1-2">
+					<div id="course-item-title">[课程]玩转<span>Bootstrap</span>基础篇</div>
+					<div>Bootstrap    1800人学习</div>
+					<div><p>课程简介： 本Bootstrap教程能够让您了解到，Bootstrap框架是一个非常受欢迎
+					的前端开发框架，他能让后端程序员和不懂设计的前端人员制作出优美的Web页
+					面或Web应用程序。在这个Bootstrap教程中</p></div>
+				</div>
+			</div>
+			<div class="course-item" class="uk-grid">
+				<div id="item-left" class="uk-width-1-2 uk-width-medium-1-2"><a href="online-catalog.html"><img src="../images/coursepic3.png"></a></div>
+				<div id="item-right" class="uk-width-1-2 uk-width-medium-1-2">
+					<div id="course-item-title">[课程]基于<span>Bootstrap</span>的网页开发</div>
+					<div>Bootstrap    200人学习</div>
+					<div><p>课程简介： 本Bootstrap教程能够让您了解到，Bootstrap框架是一个非常受欢迎
+					的前端开发框架，他能让后端程序员和不懂设计的前端人员制作出优美的Web页
+					面或Web应用程序。在这个Bootstrap教程中</p></div>
+				</div>
+			</div>
+		</div>
+		<p id="search-more">更多课程搜索</p>
+	<div id="slider">
+		<div><a href="#"><img src="../images/mobile.png"></a></div>
+		<div><a href="#"><img src="../images/return.png"></a></div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>线上排名</title>
+	<script src="../js/uikit.min.js" type="text/javascript"></script>
+	<script src="../js/uikit.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/uikit.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/test-ranking.css">
+	<script src="../js/quit.js" type="text/javascript"></script>
+	<style type="text/css">
+		@media screen and (max-width:1024px){
+			#nav-item ul li{
+				width:100px;
+				height:60px;
+				font-size:16px;
+				color:white;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="navigation">
+			<div id="logo"><img src="../images/logo.png"></div>
+			<div id="nav-item">
+				<ul>
+					<li><a href="home page.html">首页</a></li>
+					<li><a href="online-classify.html">线上培训</a></li>
+					<li><a href="training-registration.html">线下培训</a></li>
+					<li><a href="online-test.html">我的考试</a></li>
+					<li><a href="inform-undeal.html">我的通知</a></li>
+				</ul>
+			</div>
+			<div id="nav-pic" data-uk-dropdown>
+				<div id="nav-head"></div>
+				<div id="nav-quit" class="uk-dropdown uk-dropdown-small">
+					<ul>
+						<li><a href="">个人中心</a></li>
+						<li><a href="">内训师回答</a></li>
+						<li><a href="">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="content" class="uk-grid">
+			<div class="uk-width-1-10 uk-width-medium-1-10 uk-margin-large-top"></div>
+			<div id="content-nav" class="uk-width-1-6 uk-width-medium-1-6 uk-margin-large-top uk-margin-large-right">
+				<a href="online-test.html"><div>在线答题</div></a>
+				<a href=""><div>线上排名</div></a>
+				<a href="test-review.html"><div>考试回顾</div></a>
+				<a href="test-read.html"><div>考卷批阅</div></a>
+			</div>
+			<div class="uk-width-1-10 uk-width-medium-1-10 uk-margin-large-top"></div>
+			<div id="content-body" class="uk-width-5-10 uk-width-medium-5-10 uk-margin-large-top">
+				<h1>我的考试</h1>
+				<div id="test-concrete">
+					<div id="test-con-item" class="item1">
+						<div>图片预加载</div>
+						<div>12/200</div>
+					</div>
+					<div id="test-con-item">
+						<div>JS基础</div>
+						<div>30/40</div>
+					</div>
+					<div id="test-con-item">
+						<div>Bootstrap基础</div>
+						<div>24/66</div>
+					</div>
+					<div id="test-con-item">
+						<div>移动开发之IOS</div>
+						<div>20/240</div>
+					</div>
+					<div id="test-con-item">
+						<div>javascript入门</div>
+						<div>10/100</div>
+					</div>
+					<div id="test-con-item">
+						<div>uikit入门</div>
+						<div>23/400</div>
+					</div>
+				</div>
+				<div id="test-page" class="uk-grid uk-text-center">
+					<div class="uk-width-2-5 uk-width-medium-2-5"></div>
+					<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate"><a href="">上一页</a></div>
+					<div class="uk-width-1-6 uk-width-medium-1-6 uk-margin-large-left uk-text-truncate"><a href="">下一页</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

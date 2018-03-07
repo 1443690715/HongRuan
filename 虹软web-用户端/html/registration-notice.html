@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>报名栏</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- uikit -->
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/components/datepicker.css" />   
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/components/datepicker.js"></script>   
+     
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="../css/leftNavigation.css" type="text/css" />
+	<link rel="stylesheet" href="../css/training-fedback.css" type="text/css" />
+	<link rel="stylesheet" href="../css/registration-notice.css" type="text/css" />
+        <link rel="stylesheet" href="../css/uikit.min.css" />
+    <script>
+
+        function ReturnBack(){
+           window.location="training-registration.html";
+        }
+        function linkLeave(){
+            window.location="request-for-leave.html";
+        }
+    </script>
+</head>
+<body>
+	<div id="container" style="height: 800px;">
+        <div id="navigation">
+            <div id="logo"><img src="../images/logo.png"></div>
+            <div id="nav-item">
+                <ul>
+                    <li><a href="home page.html">首页</a></li>
+                    <li><a href="online-classify.html">线上培训</a></li>
+                    <li><a href="training-registration.html">线下培训</a></li>
+                    <li><a href="online-test.html">我的考试</a></li>
+                    <li><a href="inform-undeal.html">我的通知</a></li>
+                </ul>
+            </div>
+            <div id="nav-pic">
+                <div><a href="inform-undeal.html"></a></div>
+                <div></div>
+            </div>
+        </div>
+<!-- 左边导航栏 -->
+<!-- 		<nav id="leftnav">
+  			<ul id="leftNav-ul">
+  				<li><a href="training-registration.html">培训报名</a></li>
+  				<li><a href="training-course.html">培训课程</a></li>
+  				<li><a href="training-fedback.html">培训反馈</a></li>
+  			</ul>
+		</nav> -->
+<!-- 右边培训报名内容 -->
+
+		<div id="rightContent">
+		    <header id="header" class="">
+		    	报名栏
+		    </header><!-- /header -->
+			<div class="form">
+				<table>
+                    <tbody>
+                        <tr>
+                            <th>工号</th>
+                            <th>姓名</th>
+                            <th>性别</th>
+                            <th>部门</th>
+                            <th>称号</th>
+                    	</tr>                    
+                    	<tr>
+                            <th>1</th>
+                            <th>王钢</th>
+                            <th>男</th>
+                            <th>销售部</th>
+                            <th>销售冠军</th>
+                    	</tr>
+                    	<tr>
+                            <th>2</th>
+                            <th>刘淇</th>
+                            <th>女</th>
+                            <th>软件开发部</th>
+                            <th>普通员工</th>
+                    	</tr>
+                    	<tr>
+                            <th>3</th>
+                            <th>何芳芳</th>
+                            <th>女</th>
+                            <th>销售部</th>
+                            <th>销售专家</th>
+                    	</tr>
+                    	<tr>
+                            <th>4</th>
+                            <th>李强</th>
+                            <th>男</th>
+                            <th>销售部</th>
+                            <th>市场专家</th>
+                    	</tr>
+                    	<tr>
+                            <th>5</th>
+                            <th>王逸尘</th>
+                            <th>男</th>
+                            <th>软件开发部</th>
+                            <th>问题大师</th>
+                    	</tr>
+                    	<tr>
+                            <th>6</th>
+                            <th>董佳乐</th>
+                            <th>男</th>
+                            <th>软件开发部</th>
+                            <th>IT精英</th>
+                    	</tr>
+                    	<tr>
+                            <th>7</th>
+                            <th>蔡晶娜</th>
+                            <th>女</th>
+                            <th>销售部</th>
+                            <th>销售专家</th>
+                    	</tr>
+                    	<tr>
+                            <th>8</th>
+                            <th>何国庆</th>
+                            <th>男</th>
+                            <th>销售部</th>
+                            <th>市场专家</th>
+                    	</tr>
+                    	<tr>               	                    	
+                    </tbody>
+				</table>
+			</div>	
+			<div class="page">
+			   <span class="disabled_page">首页</span>
+			   <span class="disabled_page">上一页</span>
+			   <a href="javascript:void(0)" class="active text-page-tag">1</a>
+			   <a class="text-page-tag" href="#">2</a>
+			   <a class="text-page-tag" href="#">3</a>
+			   <a class="text-page-tag" href="#">4</a>
+			   <a class="text-page-tag" href="#">5</a>
+			   <a class="text-page-tag" href="#">6</a>
+			   <a class="text-page-tag" href="#">7</a>
+			   <a href="#">下一页</a>
+			   <a href="#">尾页</a>
+			</div>
+			<div class="buttons">
+				<button type="" class="btn"  onclick="UIkit.modal.confirm('确认报名?', function(){
+                        UIkit.modal.alert('报名成功！');
+                             <!-- 点击OK确认后开始执行 -->
+                     });">确认报名</button>
+				<button type="" class="btn" onclick="UIkit.modal.confirm('确认取消报名?', function(){
+                        UIkit.modal.alert('取消成功！');
+                             <!-- 点击OK确认后开始执行 -->
+                     });">取消报名</button>
+                <button type="" class="btn" onclick="ReturnBack()">返回</button>
+<!-- 				<a href="request-for-leave.html"><button type="button" class="btn" onclick="linkLeave()">我要请假</button></a>
+				<button type="button" class="btn" onclick="ReturnBack()">返回</button> -->
+			</div>
+
+
+
+		</div>
+			
+    </div>
+</body>
+</html>

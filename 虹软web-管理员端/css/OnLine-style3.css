@@ -1,0 +1,30 @@
+.container{
+	margin:0;
+	padding:0;
+}
+#mytop{
+   height:15px;
+	// border-bottom:1px 	#d0d0d0 solid;
+}
+#myrightContainer{
+	position:relative;
+	// left:-15px;
+}
+#rightContainer
+.h0{ 
+	 width:115%;
+	 height:1px;
+	 border:none;
+	 position:relative;
+	 // top:-25px;
+	 border-top:1px #d0d0d0 solid; 
+}
+#myleftNav,#leftContainer{
+	// height:100%;
+	height:800px;
+}
+@media only screen and (min-width:746px) and (max-width:977px) {
+#leftContainer{
+	display:none;
+}
+}

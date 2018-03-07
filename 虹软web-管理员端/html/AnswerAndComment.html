@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>考试答疑评论</title>
+  <!-- uikit -->
+  <link rel="stylesheet" href="../css/uikit.min.css" />
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/uikit.min.js"></script>
+  <script src="../js/homepage2.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>   
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style2.css">
+  <link rel="stylesheet" type="text/css" href="../css/AnswerAndComment.css">
+  <link rel="stylesheet" type="text/css" href="../css/Course-comment.css">
+  <link rel="stylesheet" href="../font-awesome/css/font-awesome.min.css">
+  <script src="../js/AnswerAndComment.js"></script>
+
+</head>
+<body>
+<div id="navigation" class="hidden-class">
+        <div id="logo"><a href="homepage2.html"><img src="../images/logo.png"></a></div>
+        <button  type="button" class="uk-visible-medium btn  navbar-toggle" data-toggle="collapse" data-target="#myleftNav">
+                 <span class="src-only text-danger txt-lg"  id="mynavbtn">导航栏</span>
+        </button>        
+
+    </div>
+    <div class="container-fluid" id="mycontainer">
+      <div class="row">
+        <div class="col-md-4 collapse navbar-collapse navbar-fixed-left" id="myleftNav">
+        <div id="leftContainer" class="navbar-fixed-left">
+          
+          <div  class="list-group-item  myNoglyphicon" id="mylist-group-item">
+              <span class="glyphicon glyphicon-hand-left" id="myspan"></span>
+          </div>
+
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups1" aria-expanded="false" aria-controls="#list-groups1">
+            <span class="caret"></span>          
+          <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+             <a href="#" class="myA">线上培训</a>
+          </div>
+          <div id="list-groups1" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups1-subgroups1" aria-expanded="false" aria-controls="#list-groups1-subgroups1">
+            <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课程管理</a>
+            </div>
+            <div  id="list-groups1-subgroups1" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="CreateCourse.html" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="UpdateCourse.html" class="myA">修改课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="DirManager.html" class="myA">课件管理</a>
+              </div> 
+          </div>
+          <div  class="list-group-item myNoglyphicon level1" data-toggle="collapse" data-target="#list-groups1-subgroups2" aria-expanded="false" aria-controls="#list-groups1-subgroups2">
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课件导入</a>
+          </div> 
+          <div  id="list-groups1-subgroups2" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-log-out"></span>
+                <a href="ImportCourseware.html" class="myA">资源导入</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+                  <span class="glyphicon glyphicon-log-out"></span>
+                    <a href="CourseManager.html" class="myA">资源管理</a>
+              </div>
+          </div>
+
+            <div  class="list-group-item myNoglyphicon level1">
+                <span class="glyphicon glyphicon-th-large"></span>
+                <a href="AnswerAndComment.html" class="myA">课程评论</a>
+            </div>                         
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups2" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+            <a href="#" class="myA">线下培训</a>
+          </div>        
+          <div id="list-groups2" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups2-subgroups" aria-expanded="false" aria-controls="#list-groups1-subgroups">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">培训课程</a>
+            </div>
+            <div  id="list-groups2-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="chuangjiankecheng.html" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="xiugaikecheng.html" class="myA">修改课程</a>
+              </div>
+
+            </div>
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="peixunshezhi.html" class="myA">培训设置</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="comment-chart.html" class="myA">培训反馈</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="jizhang.html" class="myA">财务明细</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups3" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>          
+            <a href="#" class="myA">考试平台</a>
+          </div>        
+          <div id="list-groups3" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-testpaper.html" class="myA">创建试题</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-testbank.html" class="myA">创建题库</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="test-manage.html" class="myA">考题管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-auto.html" class="myA">创建考卷</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups4" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+          <a href="#" class="myA">学员管理</a>
+          </div>        
+          <div id="list-groups4" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-manage.html" class="myA">信息管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-entering.html" class="myA">信息录入</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-ana.html" class="myA">培训分析</a>
+            </div>                                    
+          </div>          
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups5" aria-expanded="false" aria-controls="#list-groups5">
+          <span class="caret"></span>          
+            <a href="#" class="myA">报表管理</a>
+          </div>
+          
+                   
+          <div id="list-groups5" class="collapse">
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups" aria-expanded="false" aria-controls="list-groups5-subgroups">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">部门学习</a>
+            </div> 
+            <div id="list-groups5-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="depart-study.html" class="myA">学习分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon center-block level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="depart-course.html" class="myA">培训分析<a>
+              </div>                                   
+            </div> 
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups2" aria-expanded="false" aria-controls="list-groups5-subgroups2">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">考试情况</a>
+            </div>
+            <div id="list-groups5-subgroups2" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="depart-test-ana.html" class="myA">考试分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="depart-test.html" class="myA">部门考试</a>
+              </div>                                   
+            </div>                                   
+          </div> 
+          <div  class="list-group-item myNotice level0">
+            <a href="notify.html" class="myA">通知发布</a>
+          </div>
+        </div>          
+        </div>
+      
+        <div class="container col-md-10  col-md-12" id="myrightContainer">
+          <!-- <div class="breadcrumb" > -->
+          <ol class="uk-text-bottom breadcrumb " id="mytop">
+            <i class="fa fa-home mytopText" aria-hidden="true" id="myhome"></i>
+            <!-- <span class="uk-icon-hover fa fa-home uk-icon-large" aria-hidden="true"></span> -->
+            <label class="uk-text-muted mytopText">当前位置：</label>
+            <li class="mytopText"><a href="#">线上培训</a></li>
+            <li class="active mytopText">课程评论</li>
+            <button id="mybutton" class="uk-button" data-uk-offcanvas="{target:'#my-id'}">课程搜索</button>
+          </ol> 
+          <!-- <hr class="hr0"></hr> -->
+          <!-- </div> -->
+          
+            <div class="container">
+            <!-- <div class="row"> -->
+          <!-- 这是用来触发抽屉式边栏的按钮 -->
+            <!-- 抽屉式边栏 -->
+              <div id="my-id" class="uk-offcanvas">
+                  <div class="uk-offcanvas-bar uk-offcanvas-bar-flip" id="rightPanel">
+                    <div class="panel panel-default" id="myPanel">
+                      <div class="panel-heading">
+                          <!-- <div class="btn-group"> -->
+                            <div class="form-group"> 
+                              <div class="uk-form-icon">
+                                 <i class="uk-icon-search"></i>
+                                 <input type="text" id="mytext" class="form-control" id="exampleInputName2" value="请输入培训课程名">
+                              </div> 
+                              <!-- <span> -->
+                              <div class="dropdown">
+                                <div id="mybtn" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-controls="dropdownMenu">
+                                  <span class="caret"></span>
+                                  <span class="sr-only">Toggle Dropdown</span>
+                                </div>
+                              <!-- </span> -->
+                                <ul class="dropdown-menu uk-nav uk-nav-dropdown" id="dropdownMenu" aria-labelledby="mybtn">
+                                  <li readonly><a href="#">技术</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li class="myLi"><a href="#" class="mya">前端开发培训</a></li>
+                                  <li class="myLi"><a href="#" class="mya">后端开发培训</a></li>
+                                  <li class="myLi"><a href="#" class="mya">防抖技术培训</a></li>
+                                  <li class="myLi"><a href="#" class="mya">全景技术培训</a></li>
+                                  <li class="myLi"><a href="#" class="mya">HDR技术培训</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li><a href="#">部门</a></li>
+                                  <li role="separator" class="divider"></li>
+                                  <li class="myLi"><a href="#" class="mya">销售部营销培训</a></li>
+                                  <li class="myLi"><a href="#" class="mya">人力部管理培训</a></li>
+                                  <li class="myLi"><a href="#" class="mya">开发部实践培训</a></li>
+                                </ul>
+                              </div>
+                            </div>
+                      </div>
+                      <div class="panel-body uk-text-center " id="mypanel-body">
+                        <div class="btn btn-danger uk-container-center " id="confirmBtn">
+                          确认
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+              <!-- 抽屉式边栏 -->
+              <div id="commentContainer" class="container col-sm-12">
+                <div class="EachComment .uk-width-medium-2 center-block">
+                  <img class="uk-comment-avatar" src="../images/person1.jpg" alt="">
+                  <div class="comment-box" id="commentArea">
+                     <article class="uk-comment">
+                            <header class="uk-comment-header">                          
+                                <div class="uk-comment-title"><p>如何解决图片的缩放问题？</p></div>
+                                <div class="uk-comment-body"><p>图片不能缩放的同学注意，在 Bootstrap 版本 3 中，通过为图片添加 .img-responsive 类可以让图片支持响应式布局。</p></div>
+                                <div class="uk-comment-meta uk-margin-top"><span>IT精英</span>|<span>王晓泽</span>|<span>2017-4-4</span></div>
+                                
+                            </header>
+                         
+                     </article>   
+                  </div>               
+                </div>
+                <div class="EachComment center-block">
+                  <img class="uk-comment-avatar" src="../images/comment-avatar1.jpg" alt="">
+                  <div class="comment-box" id="commentArea">
+                     <article class="uk-comment">
+                            <header class="uk-comment-header">                          
+                                <div class="uk-comment-title"><p>Myfocus焦点图不能马上播放，要怎么解决</p></div>
+                                <div class="uk-comment-body"><p>直接在myFocus的初始化中设置loadIMGTimeout:0即可,这样就不会存在等待一段时间后才会显示图片!</p></div>
+                                <div class="uk-comment-meta uk-margin-top"><span>IT精英</span>|<span>Sexar</span>|<span>2017-05-22</span></div>
+                                
+                            </header>
+                         
+                     </article>   
+                  </div>               
+                </div>
+                <div class="EachComment center-block">
+                  <img class="uk-comment-avatar" src="../images/comment-avatar2.jpg" alt="">
+                  <div class="comment-box" id="commentArea">
+                     <article class="uk-comment">
+                            <header class="uk-comment-header">                          
+                                <div class="uk-comment-title"><p>用原生写项目好还是用框架写好啊,觉得工作中原生的怕用不上？</p></div>
+                                <div class="uk-comment-body"><p>
+                                使用原生方法编写项目，能巩固串联PHP基础知识，为后续使用框架打下坚实的基础，更有助于深入理解框架原理和深层运用！</p></div>
+                                <div class="uk-comment-meta"><span>IT精英</span>|<span>Ximme</span>|<span>2017-05-21</span></div>
+                                
+                            </header>
+                         
+                     </article>   
+                  </div>               
+                </div>
+                <div class="EachComment center-block">
+                  <img class="uk-comment-avatar" src="../images/comment-avatar3.jpg" alt="">
+                  <div class="comment-box" id="commentArea">
+                     <article class="uk-comment">
+                            <header class="uk-comment-header">                          
+                                <div class="uk-comment-title"><p>打算以PHP工程师为目标，学习前端有用吗？</p></div>
+                                <div class="uk-comment-body"><p>想成为一名合格的PHP工程师，前端是基本功，建议先修炼前端入门知识后，再继续学习PHP相关内容！</p></div>
+                                <div class="uk-comment-meta uk-margin-top"><span>php专家</span>|<span>王刚</span>|<span>2017-05-20</span></div>
+                                
+                            </header>
+                         
+                     </article>   
+                  </div>               
+                </div>              
+
+               </div><!-- 结束评论区commentContainer -->
+              <!-- </div> -->
+              </div> <!-- 结束container -->
+
+        </div><!--end rightContainer-->
+      
+      </div><!--end row-->
+    </div>
+</body>
+</html>

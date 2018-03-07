@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>创建课程</title>
+  <script src="../js/homepage2.js"></script>
+  <!-- uikit -->
+  <link rel="stylesheet" href="../css/uikit.min.css" />
+  <link rel="stylesheet" href="../css/components/upload.css" />
+  <script src="../js/components/upload.js"></script>  
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/uikit.min.js"></script>
+  <link rel="stylesheet" href="../css/components/datepicker.css" />   
+  <script src="../js/components/datepicker.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>   
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../css/style2.css">
+  <link rel="stylesheet" type="text/css" href="../css/CreateCourse.css">
+  <link rel="stylesheet" type="text/css" href="../css/OnLine-style3.css">
+  <script src="../js/homepage2.js"></script>
+
+  <script>
+    window.onload=function(){
+      var comfirmBtn=document.getElementById("comfirmBtn");
+      var DeleteBtn=document.getElementById("DeleteBtn");
+      var deleteBtn=document.getElementById("deleteBtn");
+      comfirmBtn.onclick=function(){
+        document.getElementById("courseName").value=document.getElementById("courseNameInput").value;
+      }
+      DeleteBtn.onclick=function(){
+        document.getElementById("courseName").value="请添加课件";
+      }
+      deleteBtn.onclick=function(){
+        document.getElementById("courseName").value="请添加课件";
+      }
+    }
+  </script>
+</head>
+<body>
+    <div id="navigation" class="hidden-class">
+        <div id="logo"><a href="homepage2.html"><img src="../images/logo.png"></a></div>
+        <button  type="button" class=" btn  navbar-toggle" data-toggle="collapse" data-target="#myleftNav">
+                 <span class="src-only text-danger txt-lg"  id="mynavbtn">导航栏</span>
+        </button>        
+
+    </div>
+    <div class="container-fluid" id="mycontainer">
+      <div class="row">
+        <div class="col-md-3 collapse navbar-collapse" id="myleftNav">
+        <div id="leftContainer" class="navbar-fixed-left">
+          
+          <div  class="list-group-item  myNoglyphicon" id="mylist-group-item">
+              <span class="glyphicon glyphicon-hand-left" id="myspan"></span>
+          </div>
+
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups1" aria-expanded="false" aria-controls="#list-groups1">
+            <span class="caret"></span>          
+          <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+             <a href="#" class="myA">线上培训</a>
+          </div>
+          <div id="list-groups1" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups1-subgroups1" aria-expanded="false" aria-controls="#list-groups1-subgroups1">
+            <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课程管理</a>
+            </div>
+            <div  id="list-groups1-subgroups1" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="CreateCourse.html" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="UpdateCourse.html" class="myA">修改课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="DirManager.html" class="myA">课件管理</a>
+              </div> 
+          </div>
+          <div  class="list-group-item myNoglyphicon level1" data-toggle="collapse" data-target="#list-groups1-subgroups2" aria-expanded="false" aria-controls="#list-groups1-subgroups2">
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课件导入</a>
+          </div> 
+          <div  id="list-groups1-subgroups2" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-log-out"></span>
+                <a href="ImportCourseware.html" class="myA">资源导入</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+                  <span class="glyphicon glyphicon-log-out"></span>
+                    <a href="CourseManager.html" class="myA">资源管理</a>
+              </div>
+          </div>
+
+            <div  class="list-group-item myNoglyphicon level1">
+                <span class="glyphicon glyphicon-th-large"></span>
+                <a href="AnswerAndComment.html" class="myA">课程评论</a>
+            </div>                         
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups2" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+            <a href="#" class="myA">线下培训</a>
+          </div>        
+          <div id="list-groups2" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups2-subgroups" aria-expanded="false" aria-controls="#list-groups1-subgroups">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">培训课程</a>
+            </div>
+            <div  id="list-groups2-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="chuangjiankecheng.html" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="xiugaikecheng.html" class="myA">修改课程</a>
+              </div>
+
+            </div>
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="peixunshezhi.html" class="myA">培训设置</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="comment-chart.html" class="myA">培训反馈</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="jizhang.html" class="myA">财务明细</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups3" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>          
+            <a href="#" class="myA">考试平台</a>
+          </div>        
+          <div id="list-groups3" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-testpaper.html" class="myA">创建试题</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-testbank.html" class="myA">创建题库</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="test-manage.html" class="myA">考题管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-auto.html" class="myA">创建考卷</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups4" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+          <a href="#" class="myA">学员管理</a>
+          </div>        
+          <div id="list-groups4" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-manage.html" class="myA">信息管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-entering.html" class="myA">信息录入</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-ana.html" class="myA">培训分析</a>
+            </div>                                    
+          </div>          
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups5" aria-expanded="false" aria-controls="#list-groups5">
+          <span class="caret"></span>          
+            <a href="#" class="myA">报表管理</a>
+          </div>
+          
+                   
+          <div id="list-groups5" class="collapse">
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups" aria-expanded="false" aria-controls="list-groups5-subgroups">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">部门学习</a>
+            </div> 
+            <div id="list-groups5-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="depart-study.html" class="myA">学习分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon center-block level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="depart-course.html" class="myA">培训分析<a>
+              </div>                                   
+            </div> 
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups2" aria-expanded="false" aria-controls="list-groups5-subgroups2">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">考试情况</a>
+            </div>
+            <div id="list-groups5-subgroups2" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="depart-test-ana.html" class="myA">考试分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="depart-test.html" class="myA">部门考试</a>
+              </div>                                   
+            </div>                                   
+          </div> 
+          <div  class="list-group-item myNotice level0">
+            <a href="notify.html" class="myA">通知发布</a>
+          </div>
+        </div>          
+        </div>
+       
+        <div class="container col-md-10" id="myrightContainer">
+        <div class="row">
+        <div  class="col-md-12">      
+          <ol class="breadcrumb " id="mytop">
+            <i class="fa fa-home mytopText" aria-hidden="true" id="myhome"></i>
+            <!-- <span class="uk-icon-hover fa fa-home uk-icon-large" aria-hidden="true"></span> -->
+            <label class="uk-text-muted mytopText">当前位置：</label>
+            <li class="mytopText"><a href="#">线上培训</a></li>
+            <li class="mytopText"><a href="#">课程管理</a></li>            
+            <li class="active mytopText">创建课程</li>
+          </ol><hr class="h0"/>
+          <div class="uk-grid uk-width-medium-1-2 uk-container-center uk-form uk-form-horizontal" id="content">
+            <div class="uk-width-1-1 uk-form-row uk-margin-bottom">
+              <label class="uk-width-1-5" for="text2">课程名称:</label>
+              <input class="uk-width-3-4  uk-form-large" type="text" name="" value="" id="text2">
+              <!-- <label for="text1">课程简介</label> -->
+            </div>
+            <div class="uk-width-1-1 uk-form-row uk-margin-bottom">
+              <label class="uk-width-1-5" for="text1">课程简介:</label>
+              <textarea class="uk-width-3-4" rows="8"></textarea>
+            </div>
+<!--             <div class="uk-width-1-1 uk-form-row uk-margin-bottom">
+              <label class="uk-width-1-5" for="text3">课程技术类型:</label>
+              <select name="" class="uk-width-2-3 uk-form-large" id="text3">
+                <option value="">前端开发</option>
+                <option value="">后端开发</option>
+                <option value="">HDR技术</option>
+                <option value="">体感技术</option>
+                <option value="">防抖技术</option>
+                <option value="">全景技术</option>
+                <option value="">人脸技术</option>
+                <option value="">AR/VR技术</option>
+              </select>  -->             
+            <!-- </div> -->
+            <div class="uk-width-1-1  uk-form-row uk-margin-bottom">
+              <label class="uk-width-1-4" for="text4">课程难度:</label>
+              <select name="" class="uk-width-2-3 uk-form-large" id="text4">
+                <option value="">初级</option>
+                <option value="">中级</option>
+                <option value="">高级</option>
+              </select>
+            </div>
+            <div class="uk-width-1-1  uk-form-row uk-margin-large-bottom">
+              <label class="uk-width-1-4" for="text4">课程附件:</label>
+              <textarea id="courseName" class="uk-width-2-5 uk-form-large" rows="1" placeholder="请添加课件" readonly></textarea>
+               <button class="uk-button uk-form-large" id="addBtn" data-uk-modal="{target:'#my-id'}" data-uk-modal="{center:true}" >添加</button>
+               <button class="uk-button uk-form-large" id="deleteBtn">删除</button>
+            </div><!-- 触发模态对话框的按钮 -->
+            <div class="uk-width-1-1  uk-form-row uk-margin-bottom">
+              <button class="uk-width-medium-3-10 center-block"  type="submit" id="mysubmit"   onclick="UIkit.modal.confirm('确定信息填写正确?', function(){
+              UIkit.modal.alert('创建成功！');
+                 <!-- 点击OK确认后开始执行 -->
+             });">提交</button>
+  
+            </div>            
+<!-- 模态对话框 -->
+<div id="my-id" class="uk-modal .uk-border-rounded">
+    <div class="uk-modal-dialog">
+        <a class="uk-modal-close uk-close"></a>
+        <div class="uk-modal-header h5">请选择课件类型</div>
+        <div class="panel-body">
+           <div class="uk-grid uk-width-medium-4-5 uk-container-center uk-form uk-form-horizontal">
+            <div class="uk-width-1-1 uk-form-row uk-margin-bottom">
+              <label class="col-md-3 uk-text-left goleft" for="txt1">技术类型:</label>
+              <select name="" class="uk-width-2-3" id="txt1">
+                <option value="前端开发">前端开发</option>
+                <option value="后端开发">后端开发</option>
+                <option value="HDR技术">HDR技术</option>
+                <option value="体感技术">体感技术</option>
+                <option value="防抖技术">防抖技术</option>
+                <option value="全景技术">全景技术</option>
+                <option value="人脸技术">人脸技术</option>
+                <option value="AR/VR技术">AR/VR技术</option>
+              </select>
+            </div> 
+            <div class="uk-width-1-1 uk-form-row uk-margin-bottom">
+              <label class="col-md-3 uk-text-left goleft" for="txt2">部门类别:</label>
+              <select name="" class="uk-width-2-3" id="txt2">
+                <option value="销售部">销售部</option>
+                <option value="软件开发部">软件开发部</option>
+              </select>
+            </div>
+<!--             <div class="uk-width-1-1 uk-form-row" id="txt3-parent">
+              <label class="uk-width-1-5" for="txt3">课件选择:</label>
+              <span  class="uk-width-2-3" style="overflow:hidden; margin-left:100px;width:18px;">
+              <select style="width:118px;margin-left:-100px" onchange="this.parentNode.nextSibling.value=this.value">
+                <option value="德国">德国</option>
+                <option value="挪威">挪威</option>
+                <option value="瑞士"> 瑞士</option>
+              </select>
+              </span>
+              <input  id="txt3"  name="box" style="width:100px;position:absolute;left:0px;">
+            </div> -->
+            <div class="uk-width-1-1 uk-form-row">
+            <label class="col-md-3 uk-text-left goleft" for="txt1">课件名称:</label>
+            <!-- <div class="uk-width-2-3" style="position:relative;"> -->
+            <!-- <span class="col-md-7" style="position:relative; width:260px; border:0.1px red solid;"> -->
+            <select id="myoption" class="uk-width-2-3" onchange="this.parentNode.lastElementChild.value=this.value" style="overflow:hidden;">
+              <option value="java课程">Java课程1.1</option>
+              <option value="前端开发教程">前端开发教程1.1</option>
+              <option value="移动端应用开发">移动端应用开发1.1</option>
+            </select>
+            <input name="box" placeholder="下拉选择或直接输入"  class="col-md-7"  style="position:relative;left:97.5px;top:-30px;" id="courseNameInput">
+            </div>
+
+           </div>
+        </div>
+        <div class="uk-modal-footer uk-text-center">
+         <button type="button" class="btn btn-default btn-sm uk-container-center uk-margin-right mygotop" id='comfirmBtn'>确定</button>
+         <button type="reset" class="btn btn-default btn-sm uk-container-center uk-margin-left mygotop" id="DeleteBtn">取消</button>
+        </div>
+    </div>
+</div>
+<!--  <div class="uk-alert uk-alert-large" data-uk-alert id="mask">
+    <a href="" class="uk-alert-close uk-close"></a>
+    <div class="panel panel-default">
+      <div class="panel-body">
+        
+      </div>
+    </div>
+</div>    alert 提示框-->
+ <!-- data-uk-offcanvas="{target:'#mybar'}" addBtn 属性 -->
+<!-- <div id="mybar" class="uk-offcanvas">
+    <div class="uk-offcanvas-bar uk-offcanvas-bar-flip">
+       <div class="uk-panel" id="myPanel">
+             <div class="uk-panel-badge uk-badge">...fffffff</div>
+             <h3 class="uk-panel-title">..fffff.</h3>
+       </div>
+
+    </div>
+</div>       右边弹出框      -->
+
+          </div>
+        </div> 
+        </div></div>
+      
+      </div>
+    </div>
+</body>
+</html>

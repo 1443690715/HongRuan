@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/homepage.css">
+    <link rel="stylesheet" type="text/css" href="../css/style2.css">
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/bootstrap.min.js">
+    [if lt IE 9]
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <!-- <![endif] -->
+    </script>
+</head>
+<body>
+	<div class="list-group" id="list-group" data-toggle="collapse" data-target="#list-group-all" aria-expanded="false" aria-controls="list-group-all">
+	层一</div>
+	<div id="list-group-all" class="collapse" >
+		<div class='list-group-item collapse' data-toggle="collapse" id="list-group-item1" data-target="#list-group-item-all" aria-expanded="false" aria-controls="list-group-item-all" >层一1
+		</div>	
+		<div id="list-group-item-all" class="collapse">
+			<div class="list-group-item collapse">
+				第二层1
+			</div>
+						<div class="list-group-item collapse">
+				第二层2
+			</div>
+		</div>
+		<div class='list-group-item collapse' data-toggle="collapse"  href="#titleOne">层一2</div>
+		<div class='list-group-item collapse' data-toggle="collapse"  href="#titleOne" >层一3</div>
+		<div class='list-group-item collapse' data-toggle="collapse"  href="#titleOne" >层一4</div>
+	</div>
+<!-- 
+	<div class="list-group collapse" id="list-group2" data-toggle="collapse" data-target="#list-group-item1" data-parent="#list-group"  aria-controls="list-group-item1"   >层一</div>
+		
+	
+		<div class='list-group-item collapse' data-toggle="collapse" data-parent="#list-group2"  href="#titleOne" id="list-group-item1">层一1</div> -->
+<!-- 		    <div class="panel panel-default">
+		        <div class="panel-heading collapse in" id="titleOne" data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+		            第二层
+		        </div>
+		        <div id="collapseOne" class="panel-collapse collapse in">
+		            <div class="panel-body">第三层</div>
+		        </div>
+		    </div>
+ -->
+<!-- 
+		
+		<div class='list-group-item collapse' data-toggle="collapse" data-parent="#list-group2"  href="#titleOne">层一2</div>
+		<div class='list-group-item collapse' data-toggle="collapse" data-parent="#list-group2"  href="#titleOne" >层一3</div>
+		<div class='list-group-item collapse' data-toggle="collapse" data-parent="#list-group2"  href="#titleOne" >层一4</div>
+	 -->
+
+</body>
+</html>

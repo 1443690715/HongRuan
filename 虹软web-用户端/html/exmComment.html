@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>考试评论</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!-- uikit -->
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/components/datepicker.css" />   
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/components/datepicker.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="../css/exmComment.css" type="text/css" />
+	<link rel="stylesheet" type="text/css" href="../css/uikit.min.css">
+	<script src="../js/jquery.min.js"></script>
+		<script>
+	    function clickReturn(){
+		window.location="test-review.html"
+		}
+	</script>
+
+</head>
+<body>
+	<div id="container">
+		<div id="navigation">
+			<div id="logo"><img src="../images/logo.png"></div>
+			<div id="nav-item">
+				<ul>
+					<li><a href="home page.html">首页</a></li>
+					<li><a href="online-classify.html">线上培训</a></li>
+					<li><a href="training-registration.html">线下培训</a></li>
+					<li><a href="online-test.html">我的考试</a></li>
+					<li><a href="inform-undeal.html">我的通知</a></li>
+				</ul>
+			</div>
+			<div id="nav-pic">
+				<div><a href="inform-undeal.html"></a></div>
+				<div></div>
+			</div>
+		</div>
+		<!-- <div id="banner"> -->
+	<div class="exmContainer">
+		<div class="exmName">
+				js入门
+				<button type="button" class="btn">
+				    上一个
+			    </button> 
+				<button type="button" class="btn">
+				    下一个
+			    </button> 
+			<!-- </div> -->
+
+		</div>
+		<div class="commentContent">
+		    <div class="exmQuestion" >
+			    <label class="label" for=""><p class="label1-T">考题1：</p></label><textarea class="textarea">编写程序：实现在标题栏和状态栏上动态显示当前时间的效果。</textarea>	
+			    	    	
+		    </div>
+		    <div class="myAnswer">
+			    <label class="label"><p class="label2-T">我的答案：</p></label><textarea class="textarea"><html> <head>  <title>新建网页 1</title> </head>  <body onload="showTime()"> <script>  function showTime(){ now=new Date();  display=now.toLocaleString(); document.title=display; status=display;  setTimeout("showTime()",1000) }  </script> </body>  </html> </textarea>		    	
+		    </div>
+		    <div class="answer">
+			    <label class="label"><p class="label3-T">参考答案：</p></label><textarea class="textarea">
+			    	<html> <head>  <title>新建网页 1</title> </head>  <body onload="showTime()"> <script>  function showTime(){ now=new Date();  display=now.toLocaleString(); document.title=display; status=display;  setTimeout("showTime()",1000) }  </script> </body>  </html> 
+			    </textarea>		    	
+		    </div>
+		    <div class="comment">
+			    <label class="label"><p class="label4-T">评论及注释:</p></label><textarea class="textarea">挺好的</textarea>   	
+		    </div>
+		</div>							
+		<div class="commentContent">
+		    <div class="exmQuestion" >
+			    <label class="label" for=""><p class="label1-T">考题2：</p></label><textarea class="textarea">如何理解JavaScript原型链</textarea>		    	
+		    </div>
+		    <div class="myAnswer">
+			    <label class="label"><p class="label2-T">我的答案：</p></label><textarea class="textarea">
+			    在JavaScript中，原型也是一个对象，通过原型可以实现对象的属性继承，JavaScript的对象中都包含了一个”[[Prototype]]”内部属性，这个属性所对应的就是该对象的原型“[[Prototype]]”作为对象的内部属性，是不能被直接访问的。</textarea>		    	
+		    </div>
+		    <div class="answer">
+			    <label class="label"><p class="label3-T">参考答案：</p></label><textarea class="textarea">JavaScript中的每个对象都有一个prototype属性，我们称之为原型，而原型的值也是一个对象，因此它也有自己的原型，这样就串联起来了一条原型链，原型链的链头是object,它的prototype比较特殊，值为null。原型链的作用是用于对象继承，函数A的原型属性(prototype property)是一个对象，当这个函数被用作构造函数来创建实例时，该函数的原型属性将被作为原型赋值给所有对象实例
+			    </textarea>		    	
+		    </div>
+		    <div class="comment">
+			    <label class="label"><p class="label4-T">评论及注释:</p></label><textarea class="textarea"></textarea>   	
+		    </div>
+		</div>	
+		<div class="commentContent">
+		    <div class="exmQuestion" >
+			    <label class="label" for=""><p class="label1-T">考题3：</p></label><textarea class="textarea">JavaScript代理？</textarea>		    	
+		    </div>
+		    <div class="myAnswer">
+			    <label class="label"><p class="label2-T">我的答案：</p></label><textarea class="textarea">当我们需要对很多元素添加事件的时候，可以通过将事件添加到它们的父节点而将事件委托给父节点来触发处理函数。</textarea>		    	
+		    </div>
+		    <div class="answer">
+			    <label class="label"><p class="label3-T"></p></label><textarea class="textarea">参考答案：DOM操作是十分消耗性能的。所以重复的事件绑定简直是性能杀手。而事件代理的核心思想，就是通过尽量少的绑定，去监听尽量多的事件。如何做呢？答案是利用事件冒泡机制,对其父节点ul进行事件绑定（Event Bubble),然后通过event.target来判断是哪个节点触发的事件，从而减少很多EventHandler的绑定。</textarea>		    	
+		    </div>
+		    <div class="comment">
+			    <label class="label"><p class="label4-T">评论及注释:</p></label><textarea class="textarea">这次学到了！</textarea>   	
+		    </div>
+		</div>	
+		<div class="btns">
+			<div class="btn2" onclick="UIkit.modal.confirm('确定保存?', function(){
+    					UIkit.modal.alert('已保存！'); });">
+			    保存
+		    </div>
+			<div class="btn2" onclick="clickReturn()">
+				返回
+			</div>								
+		</div>
+    </div>				
+
+    </div>
+</body>

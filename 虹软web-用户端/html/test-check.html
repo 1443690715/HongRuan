@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>线上改卷</title>
+	<script src="../js/uikit.min.js" type="text/javascript"></script>
+	<script src="../js/uikit.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/uikit.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/test-check.css">
+	<script src="../js/quit.js" type="text/javascript"></script>
+	<style type="text/css">
+		@media screen and (max-width:1024px){
+			#nav-item ul li{
+				width:100px;
+				height:60px;
+				font-size:16px;
+				color:black;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="navigation">
+			<div id="logo"><img src="../images/logo.png"></div>
+			<div id="nav-item">
+				<ul>
+					<li><a href="home page.html">首页</a></li>
+					<li><a href="online-classify.html">线上培训</a></li>
+					<li><a href="training-registration.html">线下培训</a></li>
+					<li><a href="online-test.html">我的考试</a></li>
+					<li><a href="inform-undeal.html">我的通知</a></li>
+				</ul>
+			</div>
+			<div id="nav-pic" data-uk-dropdown>
+				<div id="nav-head"></div>
+				<div id="nav-quit" class="uk-dropdown uk-dropdown-small">
+					<ul>
+						<li><a href="">个人中心</a></li>
+						<li><a href="">内训师回答</a></li>
+						<li><a href="">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="title">
+			<h2>线上批阅</h2>
+			<div>剩余需批卷数：33</div>
+		</div>
+		<div id="content">
+			<div id="test-con" class="uk-grid">
+				<div id="test-left" class="uk-width-9-10 uk-width-medium-9-10 uk-margin-right-remove">
+					<div id="test-subtitle" class="uk-grid">
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目序号</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6">01</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目类型</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">填空题</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目分值</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6">3分</div>
+					</div>
+					<div id="test-content" class="uk-grid uk-margin-top-remove">改变元素的外边距用________，改变元素的内填充用________。</div>
+					<div id="test-answer" class="uk-grid uk-margin-top-remove">margin padding</div>
+					<div id="test-standard" class="uk-grid uk-margin-top-remove">标准答案：margin padding</div>
+				</div>
+				<div id="test-right" class="uk-grid uk-width-1-10 uk-width-medium-1-10">
+					<div id="test-score">得分</div>
+					<div></div>
+				</div>
+			</div>
+			<div id="test-con" class="uk-grid">
+				<div id="test-left" class="uk-width-9-10 uk-width-medium-9-10">
+					<div id="test-subtitle" class="uk-grid">
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目序号</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6">02</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目类型</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">填空题</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目分值</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6">3分</div>
+					</div>
+					<div id="test-content" class="uk-grid uk-margin-top-remove">Color:#666666;可缩写为_______</div>
+					<div id="test-answer" class="uk-grid uk-margin-top-remove">color：#666</div>
+					<div id="test-standard" class="uk-grid uk-margin-top-remove">标准答案：color：#666</div>
+				</div>
+				<div id="test-right" class="uk-grid uk-width-1-10 uk-width-medium-1-10">
+					<div id="test-score"">得分</div>
+					<div></div>
+				</div>
+			</div>
+			<div id="test-con" class="uk-grid">
+				<div id="test-left" class="uk-width-9-10 uk-width-medium-9-10">
+					<div id="test-subtitle" class="uk-grid">
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目序号</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6">03</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目类型</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">填空题</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">题目分值</div>
+						<div class="uk-width-1-6 uk-width-medium-1-6">3分</div>
+					</div>
+					<div id="test-content" class="uk-grid uk-margin-top-remove">目前常用的WEB标准静态页面语言是___</div>
+					<div id="test-answer" class="uk-grid uk-margin-top-remove">html</div>
+					<div id="test-standard" class="uk-grid uk-margin-top-remove">标准答案：html</div>
+				</div>
+				<div id="test-right" class="uk-grid uk-width-1-10 uk-width-medium-1-10">
+					<div id="test-score">得分</div>
+					<div></div>
+				</div>
+			</div>
+		</div>
+		<div id="test-confirm"><a href="">确认</a></div>
+	</div>
+</body>
+</html>

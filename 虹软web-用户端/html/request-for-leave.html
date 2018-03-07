@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>请假栏</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<link rel="stylesheet" type="text/css"media="screen and (max-device-width:400px)"href="tinyScreen.css" />
+    <!-- uikit -->
+    <link rel="stylesheet" href="../css/uikit.min.css" />
+    <link rel="stylesheet" href="../css/components/datepicker.css" />   
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/uikit.min.js"></script>
+    <script src="../js/components/datepicker.js"></script>
+    
+
+	<link rel="stylesheet" type="text/css"media="screen and (min-width: 400px)and (max-device-width: 600px)"href="smallScreen.css" />
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" href="../css/leftNavigation.css" type="text/css" />
+	<link rel="stylesheet" href="../css/registration-notice.css" type="text/css" />
+	<link rel="stylesheet" href="../css/request-for-leave.css" type="text/css" />
+	<script>
+       function returnBack(){
+          window.location="training-course.html";
+
+       }
+	</script>
+</head>
+<body>
+	<div id="container" style="height: 800px;">
+		<div id="navigation">
+			<div id="logo"><img src="../images/logo.png"></div>
+			<div id="nav-item">
+				<ul>
+					<li><a href="home page.html">首页</a></li>
+					<li><a href="online-classify.html">线上培训</a></li>
+					<li><a href="training-registration.html">线下培训</a></li>
+					<li><a href="online-test.html">我的考试</a></li>
+					<li><a href="inform-undeal.html">我的通知</a></li>
+				</ul>
+			</div>
+			<div id="nav-pic">
+				<div><a href="inform-undeal.html"></a></div>
+				<div></div>
+			</div>
+		</div>
+<!-- 左边导航栏 -->
+<!-- 		<nav id="leftnav">
+  			<ul id="leftNav-ul">
+  				<li><a href="training-registration.html">培训报名</a></li>
+  				<li><a href="training-course.html">培训课程</a></li>
+  				<li><a href="training-fedback.html">培训反馈</a></li>
+  			</ul>
+		</nav> -->
+<!-- 右边培训报名内容 -->
+		<div id="rightContent">
+		    <header id="header" class="">
+		    	请假栏
+		    </header><!-- /header -->
+			<div class="form">
+				<table>
+						<tr>
+							<td rowspan="1">姓名</td>
+							<td colspan="6" rowspan="" headers="">王钢</td>
+							<td rowspan="1">部门</td>
+							<td colspan="6" rowspan="" headers="">技术部</td>
+
+						</tr>	
+						<tr>
+							<td rowspan="1">培训名称</td>
+							<td colspan="13" rowspan="1" headers="">java培训课程</td>
+						</tr>
+
+						<tr> 
+							<td rowspan="1">请假原因</td>
+							<td colspan="13" rowspan="1" headers=""><input type="text" name="reason" value="病假"></td>
+						</tr>
+						<tr id="leaveTime">
+							<td rowspan="1" >请假时间</td>
+							<td colspan="13" rowspan="2" headers="">
+								<form class="uk-form">
+								    <input type="" data-uk-datepicker="{format:'YYYY.MM.DD',pos:'auto'}" id="date1">
+								    <span id="to">至</span>
+								    <input type="" data-uk-datepicker="{format:'YYYY.MM.DD',pos:'auto'}" id="date2">
+								</form>
+									<!-- <input type="text" name="date-for-leave" value="2017-3-12至2017-3-18"> -->
+							</td>
+						</tr>
+				</table>
+
+			</div>	
+			<div class="buttons">
+				<button type="submit" onclick="UIkit.modal.confirm('确定请假信息填写正确?', function(){
+    					UIkit.modal.alert('请假成功！');
+    						 <!-- 点击OK确认后开始执行 -->
+				     });">确认</button>
+
+
+				<button type="reset">重置</button>
+				<button type="" onclick="returnBack()">返回</button>
+			</div>
+		</div>
+			
+    </div>
+</body>
+</html>

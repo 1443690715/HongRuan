@@ -1,0 +1,13 @@
+/*li,a,ul,div{border:1px solid black;}*/
+#content{
+	position: absolute;
+	top:100px;
+	left:8%;
+	height: 400px;
+}
+#leftContainer{
+	height: 800px;
+}
+.col-md-9{
+	height: 580px;
+}

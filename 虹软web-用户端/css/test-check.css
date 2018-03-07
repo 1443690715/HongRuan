@@ -1,0 +1,82 @@
+a:hover{text-decoration: none;}
+#container{
+	height: 1300px;
+}
+#title{
+	width:100%;
+	height: 50px;
+	position: absolute;
+	top:90px;
+}
+#title h2{
+	width: 100px;
+	height:40px;
+	float:left;
+	margin-left:100px;
+}
+#title div{
+	width:150px;
+	height: 30px;
+	position: absolute;
+	right:3%;
+	margin-right:100px;
+}
+#test-con{
+	width:80%;
+	position: relative;
+	top:100px;
+	left:15%;
+}
+#test-left{
+	width:90%;
+}
+#test-subtitle div{
+	height:20px;
+	text-align: center;
+	border:1px solid black;
+	border-right: none;
+	background-color: white;
+}
+#test-content,#test-answer,#test-standard{
+	height:70px;
+	padding-left: 45%;
+	line-height: 70px;
+	border:1px solid black;
+	border-top: none;
+	border-right: none;
+	background-color: white;
+}
+#test-right{
+	width:10%;
+}
+#test-right div:nth-child(2){
+	height:160px;
+	width:100%;
+	background-color: white;
+	border:1px solid black;
+	border-top: none;
+	min-width: 50px;
+}
+#test-score{
+	height:70px;
+	width:100%;
+	border:1px solid black;
+	line-height: 70px;
+	background-color: white;
+	min-width: 50px;
+}
+#test-confirm{
+	width:140px;
+	height:35px;
+	position: relative;
+	top:15%;
+	left:45%;
+	text-align: center;
+	line-height: 30px;
+	border-radius: 5px;
+	border: 0;
+	background-color: #666666;
+}
+#test-confirm a{
+	color: white;
+}

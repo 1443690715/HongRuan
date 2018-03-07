@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>首页测试</title>
+  <script src="../js/homepage2.js"></script>
+  <!-- uikit -->
+  <link rel="stylesheet" href="../css/uikit.min.css" />
+  <link rel="stylesheet" href="../css/components/upload.css" />
+  <script src="../js/components/upload.js"></script>  
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/uikit.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>   
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style2.css">
+  <link rel="stylesheet" type="text/css" href="../css/CreateCourse.css">
+  <link rel="stylesheet" type="text/css" href="../css/OnLine-style3.css">
+  <script src="../js/homepage2.js"></script>
+  <style type="text/css" media="screen">
+/*    #myrightContainer{
+      width:80%;
+      height:auto;
+      border:1px solid yellow;
+      background-color:red;
+    }*/
+  </style>
+</head>
+<body>
+    <div id="navigation" class="hidden-class">
+        <div id="logo"><img src="../images/logo.png"></div>
+        <button  type="button" class=" btn  navbar-toggle" data-toggle="collapse" data-target="#myleftNav">
+                 <span class="src-only text-danger txt-lg"  id="mynavbtn">导航栏</span>
+        </button>        
+
+    </div>
+    <div class="container-fluid" id="mycontainer">
+      <div class="row">
+        <div class="col-md-3 collapse navbar-collapse" id="myleftNav">
+        <div id="leftContainer" class="navbar-fixed-left">
+          
+          <div  class="list-group-item  myNoglyphicon" id="mylist-group-item">
+              <span class="glyphicon glyphicon-hand-left" id="myspan"></span>
+          </div>
+
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups1" aria-expanded="false" aria-controls="#list-groups1">
+          <span class="caret"></span>          
+          <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+             <a href="#" class="myA">线上培训</a>
+          </div>
+          <div id="list-groups1" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups1-subgroups" aria-expanded="false" aria-controls="#list-groups1-subgroups#AEA6A6">
+            <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课程管理</a>
+            </div>
+            <div  id="list-groups1-subgroups" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="#" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="#" class="myA">修改课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="#" class="myA">课件管理</a>
+              </div>  
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="#" class="myA">目录管理</a>
+              </div> 
+            </div>
+            <div  class="list-group-item myNoglyphicon level1">
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课件导入</a>
+            </div> 
+            <div  class="list-group-item myNoglyphicon level1">
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课程评论</a>
+            </div>                         
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups2" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+            <a href="#" class="myA">线下培训</a>
+          </div>        
+          <div id="list-groups2" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups2-subgroups" aria-expanded="false" aria-controls="#list-groups1-subgroups">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">培训课程</a>
+            </div>
+            <div  id="list-groups2-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="#" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="#" class="myA">修改课程</a>
+              </div>
+
+            </div>
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">培训设置</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">培训反馈</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">课件管理</a>
+            </div>  
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">财务明细</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups3" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>          
+            <a href="#" class="myA">考试平台</a>
+          </div>        
+          <div id="list-groups3" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="#" class="myA">创建试题</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="#" class="myA">创建题库</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="#" class="myA">考题管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="#" class="myA">创建考卷</a>
+            </div>  
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="#" class="myA">考卷发布</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups4" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+          <a href="#" class="myA">学员管理</a>
+          </div>        
+          <div id="list-groups4" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="#" class="myA">信息管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="#" class="myA">信息录入</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="#" class="myA">培训分析</a>
+            </div>                                    
+          </div>          
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups5" aria-expanded="false" aria-controls="#list-groups5">
+          <span class="caret"></span>          
+            <a href="#" class="myA">报表管理</a>
+          </div>
+          
+                   
+          <div id="list-groups5" class="collapse">
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups" aria-expanded="false" aria-controls="list-groups5-subgroups">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">部门学习</a>
+            </div> 
+            <div id="list-groups5-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="#" class="myA">学习分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon center-block level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="#" class="myA">培训分析<a>
+              </div>                                   
+            </div> 
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups2" aria-expanded="false" aria-controls="list-groups5-subgroups2">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">考试情况</a>
+            </div>
+            <div id="list-groups5-subgroups2" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="#" class="myA">考试分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="#" class="myA">部门考试</a>
+              </div>                                   
+            </div>                                   
+          </div> 
+          <div  class="list-group-item myNotice level0">
+            <a href="#" class="myA">通知发布</a>
+          </div>
+        </div>          
+        </div>
+       
+        <div class="container col-md-10" id="myrightContainer">
+          <div class="row">
+            <div  class="col-md-12">      
+              <ol class="breadcrumb " id="mytop">
+                <i class="fa fa-home mytopText" aria-hidden="true" id="myhome"></i>
+                <!-- <span class="uk-icon-hover fa fa-home uk-icon-large" aria-hidden="true"></span> -->
+                <label class="uk-text-muted mytopText">当前位置：</label>
+                <li class="mytopText"><a href="#">线上培训</a></li>
+                <li class="mytopText"><a href="#">课程管理</a></li>            
+                <li class="active mytopText">创建课程</li>
+              </ol><hr class="h0"/>
+              <div class="uk-grid uk-width-medium-1-2 uk-container-center uk-form uk-form-horizontal" id="content">
+
+
+
+
+              
+              </div><!-- #content -->
+            </div><!-- col-md-12 -->
+          </div><!-- row -->
+        </div><!-- myrightContainer -->
+
+      
+      </div>
+    </div>
+</body>
+</html>

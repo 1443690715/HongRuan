@@ -1,0 +1,79 @@
+#container{
+	height: 700px;
+}
+a:hover{text-decoration: none;}
+#content-nav div{
+	width:100%;
+	height:50px;
+	text-align: center;
+	line-height: 50px;
+	margin-top: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: white;
+	border-radius: 5px;
+}
+#content-nav div:nth-child(4) a{
+	background-color: #3399FF;
+	color:white;
+	display: block;
+	border-radius: 5px;
+}
+#content-nav div a:hover{
+	background-color: #3399FF;
+	color:white;
+	display: block;
+	border-radius: 5px;
+	text-decoration: none;
+}
+#content-body{
+	/*width:60%;*/
+	height:500px;
+	background-color: white;
+	position: relative;
+	left: 3%;
+}
+#content-body h1{
+	margin:25px -10px;
+	width:98%;
+	border-bottom: 1px solid #AEAEAE;
+	padding-bottom:10px;
+}
+#test-con-item{
+	/*width: 95%;*/
+	height:35px;
+	/*text-align: center;*/
+	line-height: 35px;
+	/*margin-left:25px;*/
+	margin-bottom: 30px;
+}
+#test-con-item div{
+	/*width: 14%;*/
+	height:35px;
+	/*float:left;*/
+	background-color: #F2F2F2;
+	border-radius: 5px;
+	margin:0 8px;
+	padding-right: 20px;
+}
+#test-con-item div:nth-child(1){
+	/*width: 36%;*/
+	height:35px;
+	background-color: #F2F2F2;
+	border-radius: 5px;
+}
+#test-con-item div:nth-child(4) a:hover{color:#6699FF;text-decoration: none;}
+#test-page{
+	height:20px;
+	border-radius: 5px;
+}
+#test-page div:nth-child(2){
+	background-color: #F2F2F2;
+	text-align: center;
+	padding-right: 20px;
+}
+#test-page div:nth-child(3){
+	background-color: #F2F2F2;
+	text-align: center;
+	padding-right: 20px;
+}

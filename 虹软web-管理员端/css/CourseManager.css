@@ -1,0 +1,34 @@
+.whiteRow{
+								// border:0.1px red solid;s
+}
+.myborderTitle,.myborder{
+	border-right:solid grey 0.1px;
+	border-top:solid grey 0.1px;
+	border-bottom:solid grey 0.1px;
+	background-color:white;
+    height:30px;
+    line-height:30px;
+    position:relative;
+    left:6%;
+}
+.mynum{
+   border-left:solid black 0.1px;
+}
+.myborderTitle{
+	height:40px;
+	line-height:40px;
+}
+.myinput{
+	margin-top:30px;
+}
+#rightInput{
+	position:relative;
+    left:4%;
+}
+#leftInput{
+		position:relative;
+    left:6%;
+}
+.btn-link{
+	outline:none;
+}

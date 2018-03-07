@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>课件资源编辑</title>
+  <script src="../js/homepage2.js"></script>
+  <!-- uikit -->
+  <link rel="stylesheet" href="../css/uikit.min.css" />
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/uikit.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>   
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style2.css">
+  <link rel="stylesheet" type="text/css" href="../css/CourseManager.css">
+  <link rel="stylesheet" type="text/css" href="../css/OnLine-style3.css">
+  <script src="../js/homepage2.js"></script>
+  <style type="text/css" media="screen">
+/*    #myrightContainer{
+      width:80%;
+      height:auto;
+      border:1px solid yellow;
+      background-color:red;
+    }*/
+  </style>
+
+
+<script>
+    window.onload=function(){
+      var btnlink=document.getElementsByClassName('btn-link');
+      var mynum=document.getElementsByClassName('mynum');
+      for(var i=0;i<btnlink.length;i++){
+        btnlink[i].onclick=function(){
+          $(this).closest('.row').remove();
+          // alert($(this).closest('.row .whiteRow').children("div:first-child").html());
+          for(var j=1;j<mynum.length;j++){
+            mynum[j].innerText=j;
+          }
+
+        }
+      }
+      
+    }
+    $(function(){
+
+        var progressbar = $("#progressbar"),
+            bar         = progressbar.find('.uk-progress-bar'),
+            settings    = {
+
+            action: '/', // 上传路径 url
+
+            allow : '*.(jpg|jpeg|gif|png)', // 只允许上传图片
+
+            loadstart: function() {
+                bar.css("width", "0%").text("0%");
+                progressbar.removeClass("uk-hidden");
+            },
+
+            progress: function(percent) {
+                percent = Math.ceil(percent);
+                bar.css("width", percent+"%").text(percent+"%");
+            },
+
+            allcomplete: function(response) {
+
+                bar.css("width", "100%").text("100%");
+
+                setTimeout(function(){
+                    progressbar.addClass("uk-hidden");
+                }, 250);
+
+                alert("Upload Completed")
+            }
+        };
+
+        // var select = UIkit.uploadSelect($("#upload-select"), settings),
+        //     drop   = UIkit.uploadDrop($("#upload-drop"), settings);
+    });
+
+</script>
+
+
+
+
+</head>
+<body>
+    <div id="navigation" class="hidden-class">
+        <div id="logo"><img src="../images/logo.png"></div>
+        <button  type="button" class=" btn  navbar-toggle" data-toggle="collapse" data-target="#myleftNav">
+                 <span class="src-only text-danger txt-lg"  id="mynavbtn">导航栏</span>
+        </button>        
+
+    </div>
+    <div class="container-fluid" id="mycontainer">
+      <div class="row">
+        <div class="col-md-3 collapse navbar-collapse" id="myleftNav">
+        <div id="leftContainer" class="navbar-fixed-left">
+          
+          <div  class="list-group-item  myNoglyphicon" id="mylist-group-item">
+              <span class="glyphicon glyphicon-hand-left" id="myspan"></span>
+          </div>
+
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups1" aria-expanded="false" aria-controls="#list-groups1">
+            <span class="caret"></span>          
+          <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+             <a href="#" class="myA">线上培训</a>
+          </div>
+          <div id="list-groups1" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups1-subgroups1" aria-expanded="false" aria-controls="#list-groups1-subgroups1">
+            <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课程管理</a>
+            </div>
+            <div  id="list-groups1-subgroups1" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="CreateCourse.html" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="UpdateCourse.html" class="myA">修改课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="DirManager.html" class="myA">课件管理</a>
+              </div> 
+          </div>
+          <div  class="list-group-item myNoglyphicon level1" data-toggle="collapse" data-target="#list-groups1-subgroups2" aria-expanded="false" aria-controls="#list-groups1-subgroups2">
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课件导入</a>
+          </div> 
+          <div  id="list-groups1-subgroups2" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-log-out"></span>
+                <a href="ImportCourseware.html" class="myA">资源导入</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+                  <span class="glyphicon glyphicon-log-out"></span>
+                    <a href="CourseManager.html" class="myA">资源管理</a>
+              </div>
+          </div>
+
+            <div  class="list-group-item myNoglyphicon level1">
+                <span class="glyphicon glyphicon-th-large"></span>
+                <a href="AnswerAndComment.html" class="myA">课程评论</a>
+            </div>                         
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups2" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+            <a href="#" class="myA">线下培训</a>
+          </div>        
+          <div id="list-groups2" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups2-subgroups" aria-expanded="false" aria-controls="#list-groups1-subgroups">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">培训课程</a>
+            </div>
+            <div  id="list-groups2-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="chuangjiankecheng.html" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="xiugaikecheng.html" class="myA">修改课程</a>
+              </div>
+
+            </div>
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="peixunshezhi.html" class="myA">培训设置</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="comment-chart.html" class="myA">培训反馈</a>
+            </div>   
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="jizhang.html" class="myA">财务明细</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups3" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>          
+            <a href="#" class="myA">考试平台</a>
+          </div>        
+          <div id="list-groups3" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-testpaper.html" class="myA">创建试题</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-testbank.html" class="myA">创建题库</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="test-manage.html" class="myA">考题管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-auto.html" class="myA">创建考卷</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups4" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+          <a href="#" class="myA">学员管理</a>
+          </div>        
+          <div id="list-groups4" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-manage.html" class="myA">信息管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-entering.html" class="myA">信息录入</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-ana.html" class="myA">培训分析</a>
+            </div>                                    
+          </div>          
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups5" aria-expanded="false" aria-controls="#list-groups5">
+          <span class="caret"></span>          
+            <a href="#" class="myA">报表管理</a>
+          </div>
+          
+                   
+          <div id="list-groups5" class="collapse">
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups" aria-expanded="false" aria-controls="list-groups5-subgroups">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">部门学习</a>
+            </div> 
+            <div id="list-groups5-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="depart-study.html" class="myA">学习分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon center-block level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="depart-course.html" class="myA">培训分析<a>
+              </div>                                   
+            </div> 
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups2" aria-expanded="false" aria-controls="list-groups5-subgroups2">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">考试情况</a>
+            </div>
+            <div id="list-groups5-subgroups2" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="depart-test-ana.html" class="myA">考试分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="depart-test.html" class="myA">部门考试</a>
+              </div>                                   
+            </div>                                   
+          </div> 
+          <div  class="list-group-item myNotice level0">
+            <a href="notify.html" class="myA">通知发布</a>
+          </div>
+        </div>          
+        </div>
+       
+        <div class="container col-md-10" id="myrightContainer">
+          <div class="row">
+            <div  class="col-md-12">      
+              <ol class="breadcrumb " id="mytop">
+                <i class="fa fa-home mytopText" aria-hidden="true" id="myhome"></i>
+                <!-- <span class="uk-icon-hover fa fa-home uk-icon-large" aria-hidden="true"></span> -->
+                <label class="uk-text-muted mytopText">当前位置：</label>
+                <li class="mytopText"><a href="#">线上培训</a></li> 
+                <li class="mytopText"><a href="#">课件资源</a></li>           
+                <li class="active mytopText">资源管理</li>
+              </ol>
+              <div class="uk-grid uk-margin-top uk-width-medium-1-1 uk-container-center" id="content">
+                  <div class="col-md-6 uk-margin-bottom myinput" id="leftInput">
+                    <label class="uk-width-1-5" for="txt1">导入技术类型:</label>
+                    <select name="" class="uk-width-2-5" id="txt1">
+                      <option value="前端开发">前端开发</option>
+                      <option value="后端开发">后端开发</option>
+                      <option value="HDR技术">HDR技术</option>
+                      <option value="体感技术">体感技术</option>
+                      <option value="防抖技术">防抖技术</option>
+                      <option value="全景技术">全景技术</option>
+                      <option value="人脸技术">人脸技术</option>
+                      <option value="AR/VR技术">AR/VR技术</option>
+                    </select>          
+                  </div>           
+                  <div class="col-md-6 uk-margin-bottom  myinput" id="rightInput">
+                    <label class="uk-width-1-5" for="txt2">导入部门类型:</label>
+                    <select name="" class="uk-width-2-5" id="txt2">
+                        <option value="销售部">销售部</option>
+                        <option value="软件开发部">软件开发部</option>
+                    </select>          
+                  </div> <!-- 导入选择 结束-->  
+                  <!-- 课程信息 可删除 -->
+                  <div class="container">
+                    <div class="row  uk-grid">
+                      <div class="uk-width-4-5  whiteRow" style="height:40px;">
+                        <div class="col-md-1 myborderTitle  uk-text-center mynum">号码</div>
+                        <div class="col-md-2 myborderTitle uk-text-center">课件名称</div>
+                        <div class="col-md-2 myborderTitle uk-text-center">时长</div>
+                        <div class="col-md-2 myborderTitle uk-text-center">技术类型</div>
+                        <div class="col-md-2 myborderTitle uk-text-center">部门</div>
+                        <div class="col-md-2 myborderTitle uk-text-center">点击量</div>
+                        <div class="col-md-1 myborderTitle uk-text-center">操作</div>
+                      </div>
+                    </div>              
+                    <div class="row  uk-grid">
+                      <div class="uk-width-4-5 whiteRow">
+                        <div class="col-md-1 myborder uk-text-center mynum">1</div>
+                        <div class="col-md-2 myborder uk-text-center">php入门</div>
+                        <div class="col-md-2 myborder uk-text-center">9:10</div>
+                        <div class="col-md-2 myborder uk-text-center">前端开发</div>
+                        <div class="col-md-2 myborder uk-text-center">软件开发部</div>
+                        <div class="col-md-2 myborder uk-text-center">1000</div>
+                        <div class="col-md-1 myborder uk-text-center"><button type="button" class="btn-link">删除</button></div>
+                      </div>
+                    </div> 
+                    <div class="row  uk-grid">
+                      <div class="uk-width-4-5 whiteRow">
+                        <div class="col-md-1 myborder uk-text-center mynum">2</div>
+                        <div class="col-md-2 myborder uk-text-center">Java基础介绍</div>
+                        <div class="col-md-2 myborder uk-text-center">09:10</div>
+                        <div class="col-md-2 myborder uk-text-center">前端开发</div>
+                        <div class="col-md-2 myborder uk-text-center">软件开发部</div>
+                        <div class="col-md-2 myborder uk-text-center">12563</div>
+                        <div class="col-md-1 myborder uk-text-center"><button type="button" class="btn-link">删除</button></div>
+                      </div>
+                    </div> 
+                    <div class="row  uk-grid">
+                      <div class="uk-width-4-5 whiteRow">
+                        <div class="col-md-1 myborder uk-text-center mynum">3</div>
+                        <div class="col-md-2 myborder uk-text-center">Bootstrap入门</div>
+                        <div class="col-md-2 myborder uk-text-center">10:10</div>
+                        <div class="col-md-2 myborder uk-text-center">前端开发</div>
+                        <div class="col-md-2 myborder uk-text-center">软件开发部</div>
+                        <div class="col-md-2 myborder uk-text-center">38965</div>
+                        <div class="col-md-1 myborder uk-text-center"><button type="button" class="btn-link">删除</button></div>
+                      </div>
+                    </div> 
+                    <div class="row  uk-grid">
+                      <div class="uk-width-4-5 whiteRow">
+                        <div class="col-md-1 myborder uk-text-center mynum">4</div>
+                        <div class="col-md-2 myborder uk-text-center">图片预加载</div>
+                        <div class="col-md-2 myborder uk-text-center">30:10</div>
+                        <div class="col-md-2 myborder uk-text-center">前端开发</div>
+                        <div class="col-md-2 myborder uk-text-center">软件开发部</div>
+                        <div class="col-md-2 myborder uk-text-center">38444</div>
+                        <div class="col-md-1 myborder uk-text-center"><button type="button" class="btn-link">删除</button></div>
+                      </div>
+                    </div>
+                    <div class="row  uk-grid">
+                      <div class="uk-width-4-5 whiteRow">
+                        <div class="col-md-1 myborder uk-text-center mynum">5</div>
+                        <div class="col-md-2 myborder uk-text-center">JS入门</div>
+                        <div class="col-md-2 myborder uk-text-center">9:10</div>
+                        <div class="col-md-2 myborder uk-text-center">前端开发</div>
+                        <div class="col-md-2 myborder uk-text-center">软件开发部</div>
+                        <div class="col-md-2 myborder uk-text-center">59644</div>
+                        <div class="col-md-1 myborder uk-text-center"><button type="button" class="btn-link">删除</button></div>
+                      </div>
+                    </div>
+                    <div class="row  uk-grid">
+                      <div class="uk-width-4-5 whiteRow">
+                        <div class="col-md-1 myborder uk-text-center mynum">6</div>
+                        <div class="col-md-2 myborder uk-text-center">移动开发入门之IOS</div>
+                        <div class="col-md-2 myborder uk-text-center">60:10</div>
+                        <div class="col-md-2 myborder uk-text-center">前端开发</div>
+                        <div class="col-md-2 myborder uk-text-center">软件开发部</div>
+                        <div class="col-md-2 myborder uk-text-center">30000</div>
+                        <div class="col-md-1 myborder uk-text-center"><button type="button" class="btn-link">删除</button></div>
+                      </div>
+                    </div>                                                               
+                  </div><!-- end container -->
+ 
+              </div><!-- #content -->
+            </div><!-- col-md-12 -->
+          </div><!-- row -->
+        </div><!-- myrightContainer -->
+
+      
+      </div>
+    </div>
+</body>
+</html>

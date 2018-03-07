@@ -1,0 +1,146 @@
+/*li,a,ul,div{border:1px solid black;}*/
+#leftContainer{
+	height: 800px;
+}
+#content{
+	background-color: #F2F2F2;
+}
+#subtitle li{
+	position: relative;
+	top:15px;
+	width: 100px;
+	height: 40px;
+	line-height: 40px;
+	background-color: #666666;
+	padding-left: 20px;
+}
+#subtitle li:nth-child(1){
+	background-color: #ED2E54;
+}
+.uk-subnav a{
+	color: white;
+}
+#subtitle li:hover,#subtitle a:hover{
+	background-color: #ED2E54;
+	color: white;
+	display:block;
+}
+/*#content-title{
+	padding-left:2%;
+	padding-top: 1%;
+	padding-bottom: 1%;
+	border-bottom: 1px solid #AEAEAE;
+}*/
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+}
+#content-con{
+	background-color: #F2F2F2;
+	width: 95%;
+}
+#content-con-title{
+	background-color: #F2F2F2;
+	color:red;
+	font-size: 14px;
+	/*border-bottom: 1px solid #D7D7D7;*/
+}
+.uk-button{
+	background-color:#666666;
+	color:white;
+}
+.col-md-9{
+	height: 580px;
+}
+
+
+
+/*设置搜索栏：*/
+#mydropdown{
+	position: absolute;
+	top:11%;
+	left:58.3%;
+	/*display: flex;*/
+}
+#dLabel{
+	border-top-left-radius: 0;
+	border-bottom-left-radius: 0;		
+}
+#MytextAndIcon{
+	position: absolute;
+	top:11%;
+	left:40%;
+}
+#mytext{
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;	
+}
+#dropdown-menu-UL{
+	position: relative;
+	top:-3px;
+	width:108%;
+	left:-107%;
+	border-top-right-radius: 0;
+	border-top-left-radius: 0;
+}
+#dropdown-menu-UL li{
+   text-indent:30px;
+
+}
+#searchFrom{
+	position:relative;
+	top:-70px;
+	left:-5%;
+}
+#chooseBtn{
+	background-color: #666666;
+	color:white;
+	position: absolute;
+	top:11%;
+	left:65%;
+}
+
+
+
+body{margin:0;padding:0;}
+ul,li,dl,dd,dt,p{margin:0;padding:0;}
+ul,li{list-style:none;}
+/*柱状图样式*/
+#comment-pic{
+	height: 400px;
+	width:60%;
+	position: relative;
+	background-color: white;
+	top:10px;
+	left:20%;
+}
+#chartTitle{
+	margin:0 auto;
+	font-size: 18px;
+	text-align: center;
+	/*margin-top: 10px;*/
+	position:relative;
+	top:10px;
+}
+#histogram-container{
+	/*height: 400px;*/
+	/*margin-top:20px;*/
+	background-color: white;
+}
+.histogram-container{background-color: white;position:relative;margin-left:60px;margin-top:10px;margin-bottom:25px;}
+.histogram-bg-line{border:#999 solid;border-width:0 1px 1px 1px;border-right-color:#eee;overflow:hidden;width:99%;position: relative;top:20px;}
+.histogram-bg-line ul{overflow:hidden;border:#eee solid;border-width:1px 0 0 0;}
+.histogram-bg-line li{float:left;width:20%;/*根据.histogram-bg-line下的ul里面li标签的个数来控制比例*/overflow:hidden;}
+.histogram-bg-line li div{border-right:1px #eee solid;}
+.histogram-content{position:absolute;left:0px;top:20px;width:99%;height:100%;}
+.histogram-content ul{height:100%;}
+.histogram-content li{float:left;height:100%;width:20%;/*根据直方图的个数来控制这个width比例*/text-align:center;position:relative;}
+.histogram-box{position:relative;display:inline-block;height:100%;width:20px;}
+.histogram-content li a{position:absolute;bottom:0;right:0;display:block;width:20px;}
+.histogram-content li .name{position:absolute;bottom:-20px;left:0px;white-space:nowrap;display:inline-block;width:100%;font-size:12px;}
+.histogram-y{position:absolute;left:-60px;top:10px;font:12px/1.8 verdana,arial;}
+.histogram-y li{text-align:right;width:55px;padding-right:5px;color:#333;}
+.histogram-bg-line li div,.histogram-y li{height:60px;/*控制单元格的高度及百分比的高度，使百分数与线条对齐*/}

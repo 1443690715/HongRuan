@@ -1,0 +1,143 @@
+a:hover{text-decoration: none;}
+#nav-quit ul{
+	width: 100%;
+	margin-left: -20px;
+}
+#nav-quit ul li{
+	width: 90%;
+	margin-bottom: 5px;
+	border-bottom: 1px solid #ACACAC;
+	text-align: center;
+}
+#course-nav{
+	width:100%;
+	height:150px;
+	padding-top:5px;
+	/*padding-left:60px;*/
+	background-color:white;
+}
+.dowebok{
+	position: relative;
+	top:-40px;
+	left:10%;
+}
+.dowebok li{
+	display: inline-block;
+}
+.dowebok ul{
+	list-style-type: none;
+}
+#course-nav-sub{
+	width:80%;
+	height: 35px;
+	border-bottom:1px solid #edf1f2;
+	min-width: 500px;
+	/*position: relative;
+	top:-15px;*/
+}
+#course-nav-sub li{
+	margin:10px 0;
+}
+#course-nav-sub div{
+	margin-top:10px;
+	margin-bottom: -10px;
+	margin-left:5%;
+}
+#course-nav-sub span{
+	font-size: 18px;
+}
+/*#course-nav-sub a:hover{color:#6699FF;}
+#course-nav-sub a{
+	position: relative;
+	left:50px;
+	top:-22px;
+	padding-left:50px;
+	padding-right: 50px;
+	font-size:16px;
+	color:black;
+}*/
+#content{
+	width:80%;
+	margin:0 auto;
+}
+#course-toolbar{
+	width:40%;
+	margin-top:25px;
+	min-width: 300px;
+}
+#course-toolbar a{
+	padding-right: 30px;
+}
+#course-toolbar a:hover{color:#6699FF;}
+#course-toolbar span{color:red;}
+#course-content{
+	height:250px;
+	border-bottom: 1px solid #797979;
+}
+#course-p{
+	overflow: hidden;
+	height:160px;
+	min-height: 150px;
+	padding-top:5px; 
+	/* */
+}
+#course-content img{
+	width: 100%;
+	height: 150px;
+}
+#course-add{
+	width:25%;
+	height:20px;
+	position:relative;
+	top:-10%;
+	left:10%;
+	overflow: hidden;
+}
+.add-button{
+	text-align: center;
+	color:white;
+	font-weight: bold;
+	font-size:16px;
+	background-color:transparent;
+	border:0;
+	outline: none;
+}
+.add-button:hover{
+	color:black;;
+}
+#page{
+	width:80%;
+	height:60px;
+	margin:0 auto;
+	text-align: center;
+	margin-top:30px;
+	/*min-width: 710px;*/
+}
+#page a{
+	width: 15%;
+	padding:0px 20px;
+	margin-right: 15px;
+	text-align: center;
+	border-radius: 5px;
+	border-color: white;
+	background-color: white;
+	color:#333333;
+}
+#page a:hover{background-color: #D7D7D7;color:white;}
+#slider{
+	width:52px;
+	height:104px;
+	position:fixed;
+	top:500px;
+	right:50px;
+	text-align: center;
+}
+#slider div{
+	padding-top:5px; 
+	text-align: center;
+	border:1px solid #b4bbbf;
+	background-color:white;
+	opacity:0.6;
+	filter:"alpha(opacity=80)";
+	-ms-filter:"alpha(opacity=80)"; 
+}

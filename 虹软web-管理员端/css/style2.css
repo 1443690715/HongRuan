@@ -1,0 +1,154 @@
+*{
+	margin:0;
+	padding:0;
+}
+a{text-decoration:none;color:black;}
+a:hover{text-decoration:none;}
+li{list-style: none;}
+#container{
+	width:100%;
+	height:1000px;
+	font-family: 微软雅黑;
+	font-size: 14px;
+	background-color: #F2F2F2;
+}
+body{
+	background-color: #F2F2F2;
+}
+#navigation{
+	background-color: #363636;
+	// background-color: #293038;
+	width:100%;
+	height:60px;
+}
+#logo{
+	width:140px;
+	height:100%;
+	position: absolute;
+	top:-4%;
+}
+@media only screen and (max-width:800px){
+	#nav-pic div:nth-child(1){
+		right:80px;
+	}
+
+}
+#mynavbtn{
+	color:white;
+}
+#left-nav{
+	height:auto;
+}
+.uk-panel{
+	background-color: #363636;
+	padding: 0;
+}
+.uk-accordion-title{
+	width:86%;
+	height: 40px;
+	margin-top: 0;
+	margin-bottom:0;
+	background:none;
+	font-size: 18px;
+	line-height: 40px;
+	text-align: center;
+	cursor: pointer;
+	color:white;
+}
+.uk-accordion-content{
+	background-color: #434343;
+}
+#nav-sub a{
+	color: white;
+}
+.uk-nav-sub li{
+	height: 40px;
+	line-height: 40px;
+	text-align:center;
+	font-size: 16px;
+}
+#nav-second,#nav-second1,#nav-second2,#nav-second3{
+	height:auto;
+	line-height: 40px;
+	text-align: center;
+}
+#nav-third li,#nav-third1 li,#nav-third2 li,#nav-third3 li{
+	height: 40px;
+	width:100%;
+	background-color: #666666;
+}
+#nav-second-title{
+	margin-left: 8%;
+}
+/*[class*=uk-icon-] {
+    font-family: FontAwesome;
+    display: inline-block;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}*/
+#nav-third,#nav-third1,#nav-third2,#nav-third3{
+	display: none;
+}
+#mycontainer{
+   margin-left:-20px;
+}
+.list-group-item{
+	width:150px;
+	height:50px;
+	text-align:left;
+	text-indent: 10px;
+		background-color: #333333;
+		border:none;
+		// background-color: #293038;
+		color:white;
+}
+.list-group-item:hover{
+	// background-color:rgb(0,104,304);
+	background-color: #E4153F;
+	opacity:0.8;
+}
+.glyphicon{
+	font-size:14px;
+}
+// .myNoglyphicon{
+// 	text-indent: #4C49490px;
+// }
+.myNotice{
+	text-indent:25px;
+}
+#leftContainer{
+	width:150px;
+	height:600px;
+    // margin-top:-10px;
+    margin:0;
+    padding:0;
+	background-color: #293038;
+}
+.level0{
+  font-size:16px;
+}
+.level1{
+	// text-indent:10px;
+	font-size:14px;
+	background-color: #4A4747;
+}
+.level2{
+		font-size:14px;
+	background-color:#787676;
+	text-indent:15px;
+}
+#mylist-group-item{
+	background-color: #293038;
+	text-indent: 25px;
+
+}
+.myA,.myA:visited{
+	color:white;
+
+}
+.myA:link{
+text-decoration:none;
+color:white;
+}

@@ -1,0 +1,86 @@
+#container{
+	height: 700px;
+}
+a:hover{text-decoration: none;}
+#content-nav div{
+	width:100%;
+	height:50px;
+	text-align:center;
+	line-height: 50px;
+	margin-top: 50px;
+	font-size: 20px;
+	font-weight: bold;
+	background-color: white;
+	border-radius: 5px;
+}
+#content-nav a:nth-child(2) div{
+	background-color: #3399FF;
+	color:white;
+	display: block;
+	text-decoration: none;
+	border-radius: 5px;
+}
+#content-nav a div:hover{
+	background-color: #3399FF;
+	color:white;
+	display: block;
+	border-radius: 5px;
+	text-decoration: none;
+}
+#content-body{
+	width:50%;
+	height:500px;
+	background-color: white;
+	position: relative;
+	left: 3%;
+}
+#content-body h1{
+	margin:25px -10px;
+	width:98%;
+	border-bottom: 1px solid #AEAEAE;
+	padding-bottom:10px;
+}
+#test-con-item{
+	width: 80%;
+	height:20px;
+	text-align: center;
+	margin-left:40px;
+	margin-bottom: 35px;
+}
+.item1{
+	padding-top:25px;
+}
+#test-con-item div:nth-child(1){
+	width:50%;
+	height:20px;
+	float:left;
+	background-color: #F2F2F2;
+	border-radius: 5px;
+}
+#test-con-item div:nth-child(2){
+	width: 20%;
+	height:20px;
+	float:right;
+	background-color: #F2F2F2;
+	border-radius: 5px;
+}
+#test-page{
+	height:20px;
+	border-radius: 5px;
+}
+#test-page div:nth-child(2){
+	background-color: #F2F2F2;
+	text-align: center;
+	padding-right: 20px;
+}
+#test-page div:nth-child(2) a:hover{
+	font-weight: bold;
+}
+#test-page div:nth-child(3){
+	background-color: #F2F2F2;
+	text-align: center;
+	padding-right: 20px;
+}
+#test-page div:nth-child(3) a:hover{
+	font-weight: bold;
+}

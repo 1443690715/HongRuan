@@ -1,0 +1,97 @@
+a:hover{text-decoration: none;}
+#container{
+	height: 800px;
+}
+#user-information{
+	height:140px;
+	background-color: #AEAEAE;
+}
+#user-head{
+	width:100px;
+	height:100px;
+	border:1px solid #666666;
+	border-radius: 50%;
+	background-image: url(../images/bgPic7.jpg);
+	background-position: 30% 50%;
+}
+#user-name{
+	color:white;
+	font-size:16px;
+}
+#user-posi,#user-depart{
+	color:white;
+	font-size:16px;
+}
+#user-posi{border-right: 1px solid white;}
+#mess-num1{
+	padding-top: 50px;
+	font-size: 16px;
+	position: relative;
+	left:50%;
+}
+#sub-title a:hover{color:#6699FF;text-decoration: none;}
+#sub-title div:nth-child(2) a{
+	color: red;
+}
+#sub-title div{
+	font-size: 20px;
+	font-family: bold;
+	min-width: 100px;
+}
+#sub-title div:nth-child(2){
+	font-size: 20px;
+	font-family: bold;
+	border-right: 1px solid #666666;
+}
+#content-title{
+	background-color: #AEAEAE;
+}
+#content-title{color:white;}
+#content-title div:hover{
+	color:black;
+	text-decoration: none;
+}
+#content-title div{
+	text-align: center;
+	line-height:50px;
+	font-size:18px;
+}
+#content-con1,#content-con2,#content-con3,#content-con4,#content-con5,#content-con6{
+	height:450px;
+	margin:0 auto;
+	border:1px solid #cccccc;
+	border-top:none;
+	position: absolute;
+	top:50%;
+	padding-left: 20%;
+	display: none;
+}
+#content-con1{
+	display: block;
+}
+#content-body h1{
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #cccccc;
+}
+#content-con3 h2,#content-con4 h2{
+	text-align: center;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #cccccc;
+}
+#content-btn{
+	height:40px;
+}
+#btn-confirm,#btn-delete{
+	height:40px;
+	border:0;
+	border-radius: 5px;
+	color: white;
+	outline:none;
+	padding-right:30px;
+	margin-left: 60px;
+	position: relative;
+	left:10%;
+}
+#btn-delete{background-color: #E4153F;}
+#btn-confirm{background-color: #96C3D9;}

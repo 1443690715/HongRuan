@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>考卷管理</title>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>   
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="../css/uikit.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/uikit.css">
+  <link rel="stylesheet" type="text/css" href="../css/accordion.css">
+  <link rel="stylesheet" type="text/css" href="../font-awesome/css/font-awesome.min.css">
+  <script src="../js/jquery.min.js" type="text/javascript"></script>
+  <script src="../js/uikit.min.js" type="text/javascript"></script>
+  <script src="../js/uikit.js" type="text/javascript"></script>
+  <script src="../js/accordion.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="../css/style2.css">
+  <link rel="stylesheet" type="text/css" href="../css/test-manage.css">
+  <script src="../js/homepage2.js"></script>
+</head>
+<body>
+    <div id="navigation" class="hidden-class">
+        <div id="logo"><a href="homepage2.html"><img src="../images/logo.png"></a></div>
+        <button type="button" class=" btn navbar-toggle" data-toggle="collapse" data-target="#myleftNav">
+                 <span class="src-only text-danger txt-lg">导航栏</span>
+        </button>
+    </div>
+    <div class="container-fluid" id="mycontainer">
+      <div class="row" id="myrow">
+        <div class="col-md-3 collapse navbar-collapse" id="myleftNav">
+        <div id="leftContainer" class="navbar-fixed-left">
+          
+          <div  class="list-group-item  myNoglyphicon" id="mylist-group-item">
+              <span class="glyphicon glyphicon-hand-left" id="myspan"></span>
+          </div>
+
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups1" aria-expanded="false" aria-controls="#list-groups1">
+            <span class="caret"></span>          
+          <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+             <a href="#" class="myA">线上培训</a>
+          </div>
+          <div id="list-groups1" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups1-subgroups1" aria-expanded="false" aria-controls="#list-groups1-subgroups1">
+            <!-- <span class="glyphicon glyphicon-triangle-bottom"></span> -->
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课程管理</a>
+            </div>
+            <div  id="list-groups1-subgroups1" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="CreateCourse.html" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="UpdateCourse.html" class="myA">修改课程</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+              <span class="glyphicon glyphicon-credit-card"></span>
+                <a href="DirManager.html" class="myA">课件管理</a>
+              </div> 
+          </div>
+          <div  class="list-group-item myNoglyphicon level1" data-toggle="collapse" data-target="#list-groups1-subgroups2" aria-expanded="false" aria-controls="#list-groups1-subgroups2">
+              <span class="glyphicon glyphicon-th-large"></span>
+              <a href="#" class="myA">课件导入</a>
+          </div> 
+          <div  id="list-groups1-subgroups2" class="collapse">
+              <div  class="list-group-item myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-log-out"></span>
+                <a href="ImportCourseware.html" class="myA">资源导入</a>
+              </div>
+              <div  class="list-group-item myNoglyphicon level2">
+                  <span class="glyphicon glyphicon-log-out"></span>
+                    <a href="CourseManager.html" class="myA">资源管理</a>
+              </div>
+          </div>
+
+            <div  class="list-group-item myNoglyphicon level1">
+                <span class="glyphicon glyphicon-th-large"></span>
+                <a href="AnswerAndComment.html" class="myA">课程评论</a>
+            </div>                         
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups2" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+            <a href="#" class="myA">线下培训</a>
+          </div>        
+          <div id="list-groups2" class="collapse">
+            <div class="list-group-item level1" data-toggle="collapse" data-target="#list-groups2-subgroups" aria-expanded="false" aria-controls="#list-groups1-subgroups">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="#" class="myA">培训课程</a>
+            </div>
+            <div  id="list-groups2-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="chuangjiankecheng.html" class="myA">创建课程</a>
+              </div>
+              <div  class="list-group-item  myNoglyphicon level2">
+              <span class="glyphicon glyphicon-edit"></span>
+                <a href="xiugaikecheng.html" class="myA">修改课程</a>
+              </div>
+
+            </div>
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="peixunshezhi.html" class="myA">培训设置</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="comment-chart.html" class="myA">培训反馈</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-calendar"></span>
+              <a href="jizhang.html" class="myA">财务明细</a>
+            </div>                               
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups3" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>          
+            <a href="#" class="myA">考试平台</a>
+          </div>        
+          <div id="list-groups3" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-testpaper.html" class="myA">创建试题</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-testbank.html" class="myA">创建题库</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="test-manage.html" class="myA">考题管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-list-alt"></span>
+              <a href="create-auto.html" class="myA">创建考卷</a>
+            </div>                                     
+          </div>
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups4" aria-expanded="false" aria-controls="list-groups">
+          <span class="caret"></span>
+          <a href="#" class="myA">学员管理</a>
+          </div>        
+          <div id="list-groups4" class="collapse">
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-manage.html" class="myA">信息管理</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-entering.html" class="myA">信息录入</a>
+            </div> 
+            <div  class="list-group-item  myNoglyphicon level1">
+            <span class="glyphicon glyphicon-duplicate"></span>
+              <a href="trainee-ana.html" class="myA">培训分析</a>
+            </div>                                    
+          </div>          
+          <div class="list-group-item level0" data-toggle="collapse" data-target="#list-groups5" aria-expanded="false" aria-controls="#list-groups5">
+          <span class="caret"></span>          
+            <a href="#" class="myA">报表管理</a>
+          </div>
+          
+                   
+          <div id="list-groups5" class="collapse">
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups" aria-expanded="false" aria-controls="list-groups5-subgroups">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">部门学习</a>
+            </div> 
+            <div id="list-groups5-subgroups" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="depart-study.html" class="myA">学习分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon center-block level2">
+                <span class="glyphicon glyphicon-book"></span>
+                  <a href="depart-course.html" class="myA">培训分析<a>
+              </div>                                   
+            </div> 
+            <div  class="list-group-item  myNoglyphicon  level1"  data-toggle="collapse" data-target="#list-groups5-subgroups2" aria-expanded="false" aria-controls="list-groups5-subgroups2">
+            <span class="glyphicon glyphicon-education"></span>
+              <a href="#" class="myA">考试情况</a>
+            </div>
+            <div id="list-groups5-subgroups2" class="collapse">
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="depart-test-ana.html" class="myA">考试分析</a>
+              </div> 
+              <div  class="list-group-item  myNoglyphicon  level2">
+                <span class="glyphicon glyphicon-export"></span>
+                  <a href="depart-test.html" class="myA">部门考试</a>
+              </div>                                   
+            </div>                                   
+          </div> 
+          <div  class="list-group-item myNotice level0">
+            <a href="notify.html" class="myA">通知发布</a>
+          </div>
+        </div>          
+        </div>
+       
+      <div class="col-md-9">
+          <div class="container">
+            <div class="row">
+              <div id="content" class="col-md-12">
+                <ol class="breadcrumb " id="mytop">
+                  <i class="fa fa-home mytopText" aria-hidden="true" id="myhome"></i>
+                  <!-- <span class="uk-icon-hover fa fa-home uk-icon-large" aria-hidden="true"></span> -->
+                  <label class="uk-text-muted mytopText">当前位置：</label>
+                  <li class="mytopText"><a href="#">考试平台</a></li> 
+                  <li class="active mytopText">考题管理</li>
+                </ol>
+                <form class="uk-form uk-text-center uk-margin-large-top">
+                    <fieldset data-uk-margin>
+                      <input type="text" placeholder="考试名称" class="uk-margin-large-right uk-width-2-5" id="testname">
+                    </fieldset>
+                </form>
+                <button class="uk-button" id="search">查询</button>
+                <div id="content-con" class="uk-container-center uk-margin-large-top">
+                  <!-- <div id="content-con-title" class="uk-panel-title uk-text-center">修改考卷</div> -->
+                  <table id="table1" class="uk-table">
+                    <thead>
+                      <tr>
+                        <th>考试名称</th>
+                        <th>出卷时间</th>
+                        <th>试题技能</th>
+                        <th>考试平台</th>
+                        <th>考试部门</th>
+                        <th>考试时长</th>
+                        <th>考试开始时间</th>
+                        <th>考试结束时间</th>
+                        <th>是否适合移动端</th>
+                        <th>批卷人编号</th>
+                        <th>改卷截止日期</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>前端基础知识</td>
+                              <td>2017/04/08</td>
+                              <td>
+                                <form class="uk-form uk-text-center">
+                                  <fieldset data-uk-margin>
+                                    <select class="uk-form-blank">
+                                      <option>JSP</option>
+                                      <option>HTML</option>
+                                      <option>CSS</option>
+                                    </select>
+                                  </fieldset>
+                                </form>
+                              </td>
+                              <td>
+                               <form class="uk-form uk-text-center">
+                                  <fieldset data-uk-margin>
+                                    <select class="uk-form-blank">
+                                      <option>线上</option>
+                                      <option>线下</option>
+                                    </select>
+                                    </fieldset>
+                                </form>
+                              </td>
+                              <td>
+                              <form class="uk-form uk-text-center">
+                                  <fieldset data-uk-margin>
+                                    <select class="uk-form-blank">
+                                      <option>软件开发部</option>
+                                      <option>后勤部</option>
+                                      <option>财务部</option>
+                                      <option>人事部</option>
+                                      <option>行政部</option>
+                                      <option>销售部</option>
+                                    </select>
+                                  </fieldset>
+                                </form>
+                              </td>
+                              <td>60min</td>
+                              <td>2017/06/01</td>
+                              <td>2017/08/30</td>
+                              <td>
+                              <form class="uk-form uk-text-center">
+                                  <fieldset data-uk-margin>
+                                    <select class="uk-form-blank">
+                                      <option>是</option>
+                                      <option>否</option>
+                                    </select>
+                                  </fieldset>
+                              </form>
+                              </td>
+                              <td>1150345</td>
+                              <td>2017/09/10</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <button id="add-test" class="uk-button uk-border-rounded" data-uk-modal="{target:'#hidden-table'}">添加试题</button>
+                  <table id="testtable" class="uk-table uk-text-center">
+                    <thead>
+                      <tr>
+                        <th class="uk-text-center">试题题干</th>
+                        <th class="uk-text-center">题目类型</th>
+                        <th class="uk-text-center">试题分值</th>
+                        <th class="uk-text-center">操作</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td>下述选项中不属于JDBC基本功能的是（）</td>
+                              <td>选择题</td>
+                              <td>2分</td>
+                              <td><button id="del-btn" class="uk-button uk-border-rounded">删除</button></td>
+                          </tr>
+                          <tr>
+                              <td>JSP 执行过程的各个阶段为__</td>
+                              <td>填空题</td>
+                              <td>2分</td>
+                              <td><button id="del-btn" class="uk-button uk-border-rounded">删除</button></td>
+                          </tr>
+                          <tr>
+                              <td>JSP实现数据库的修改操作用到下面的哪些方法？</td>
+                              <td>选择题</td>
+                              <td>2分</td>
+                              <td><button id="del-btn" class="uk-button uk-border-rounded">删除</button></td>
+                          </tr>
+                          <tr>
+                              <td>下面哪个标签可以将外部样式表文件链入到HTML文档中。</td>
+                              <td>选择题</td>
+                              <td>2分</td>
+                              <td><button id="del-btn" class="uk-button uk-border-rounded">删除</button></td>
+                          </tr>
+                          <tr>
+                              <td>在网页中要制作树状导航菜单，应使用的控件___</td>
+                              <td>填空题</td>
+                              <td>2分</td>
+                              <td><button id="del-btn" class="uk-button uk-border-rounded">删除</button></td>
+                          </tr>
+                          <tr>
+                              <td>编写JSP程序。根据题中的职业信息，如果用户填写的职业<br>为经理，则将当前页面转向manager.jsp。</td>
+                              <td>简答题</td>
+                              <td>8分</td>
+                              <td><button id="del-btn" class="uk-button uk-border-rounded">删除</button></td>
+                          </tr>
+                      </tbody>
+                  </table>
+                  <ul class="uk-pagination uk-margin-top uk-margin-bottom" id="page">
+                      <li class="uk-disabled uk-margin-large-right"><span>首页</span></li>
+                      <li class="uk-disabled  uk-margin-right"><span>上一页</span></li>
+                      <li class="uk-active  uk-margin-right"><a href="">1</a></li>
+                      <li><a href="">2</a></li>
+                      <li><a href="">3</a></li>
+                      <li><a href="">4</a></li>
+                      <li><span>...</span></li>
+                      <li class="uk-margin-large-right"><a href="">下一页</a></li>
+                      <li class="uk-margin-large-right"><a href="">尾页</a></li>
+                      <button class="uk-button uk-margin-large-left" id="success">确认修改</button>
+                  </ul>
+              </div>
+            </div>
+          </div>
+          <div id="hidden-table" class="uk-modal uk-width-7-10 uk-width-medium-7-10">
+          <div class="uk-modal-dialog">
+          <a href="" class="uk-modal-close uk-close"></a>
+            <h2>添加试题</h2>
+            <label class="uk-width-medium-1-10">试题库</label>
+            <select class="uk-width-medium-1-4">
+              <option>js试题库</option>
+              <option>web试题库</option>
+              <option>java试题库</option>
+            </select>
+            <label class="uk-width-medium-1-5 uk-margin-large-left">试题类型</label>
+            <select class="uk-width-medium-1-4">
+              <option value="1">选择题</option>
+              <option value="2">填空题</option>
+              <option value="3">判断题</option>
+              <option value="4">简答题</option>
+            </select>
+            <table class="uk-table uk-text-center">
+                <tbody>
+                    <tr>
+                        <th class="uk-text-center">试题类型</th>
+                        <th class="uk-text-center">试题内容</th>
+                        <th class="uk-text-center">Column3</th>
+                    </tr>
+                     <tr id="row1">
+                        <td>选择题</td>
+                        <td>下述选项中不属于JDBC基本功能的是（）</td>
+                        <td><input type="checkbox" id="arrcheckbox1"></td>
+                    </tr>
+                     <tr id="row2">
+                        <td>选择题</td>
+                        <td>JSP 执行过程的各个阶段为（）</td>
+                        <td><input type="checkbox"  id="arrcheckbox2"></td>
+                    </tr>
+                    <tr id="row3">
+                        <td>选择题</td>
+                        <td>可以实现不同网页之间的数据共享，而且还可以实现跨机共享数据的JSP对象是（）</td>
+                        <td><input type="checkbox" id="arrcheckbox3"></td>
+                    </tr>
+                    <tr id="row4">
+                        <td>选择题</td>
+                        <td>JSP实现数据库的修改操作用到下面的哪些方法？</td>
+                        <td><input type="checkbox" id="arrcheckbox4"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="uk-text-center"><button class="uk-button uk-text-center">添加</button></div>
+            <ul class="uk-pagination uk-margin-top uk-margin-bottom" >
+              <li class="uk-disabled uk-margin-right"><span>首页</span></li>
+              <li class="uk-disabled uk-margin-right"><span>上一页</span></li>
+              <li class="uk-active uk-margin-right"><a href="">1</a></li>
+              <li class="uk-margin-right"><a href="">2</a></li>
+              <li class="uk-margin-right"><a href="">3</a></li>
+              <li class="uk-margin-right"><a href="">4</a></li>
+              <li class="uk-margin-right"><span>...</span></li>
+              <li class="uk-margin-right"><a href="">下一页</a></li>
+              <li><a href="">尾页</a></li>
+            </ul>
+          </div>
+          </div>
+      </div>
+    </div>
+</body>
+<script type="text/javascript">
+var testname=document.getElementById("testname");
+document.getElementById("search").onclick=function(){
+  if(testname.value!=""){
+    document.getElementById("table1").style.display="block";
+    document.getElementById("add-test").style.display="block";
+    document.getElementById("testtable").style.display="block";
+    document.getElementById("page").style.display="block";
+  }
+  else{
+    alert("请输入考试名称！");
+  }
+}
+document.getElementById("success").onclick=function(){
+        alert("生成成功！");
+    }
+</script>
+</html>

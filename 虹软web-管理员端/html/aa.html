@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>资源导入</title>
+  <!-- <script src="../js/homepage2.js"></script> -->
+  <!-- uikit -->
+  <link rel="stylesheet" href="../css/uikit.min.css" />
+  <link rel="stylesheet" href="../css/components/upload.css" />
+  <link rel="stylesheet" href="../css/components/placeholder.css" />
+  <link rel="stylesheet" href="../css/components/form-file.css" />
+  <link rel="stylesheet" href="../css/components/progress.css " />
+  
+  <script src="../js/components/upload.js"></script>  
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/uikit.min.js"></script>
+
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>   
+  <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="../css/style2.css">
+  <link rel="stylesheet" type="text/css" href="../css/ImportCourseware.css">
+  <link rel="stylesheet" type="text/css" href="../css/OnLine-style3.css">
+  <!-- <script src="../js/importCourseware.js"></script> -->
+</head>
+<html>
+<body>
+<div id="upload-drop" class="uk-placeholder">
+    Info text... <a class="uk-form-file">Select a file<input id="upload-select" type="file"></a>.
+</div>
+
+<div id="progressbar" class="uk-progress uk-hidden">
+    <div class="uk-progress-bar" style="width: 0%;">...</div>
+</div>
+</body>	
+
+
+<script src="../js/components/upload.js"></script>  
+<script>
+
+    $(function(){
+
+        var progressbar = $("#progressbar"),
+            bar         = progressbar.find('.uk-progress-bar'),
+            settings    = {
+
+            action: '/', // 上传路径 url
+
+            allow : '*.(jpg|jpeg|gif|png)', // 只允许上传图片
+
+            loadstart: function() {
+                bar.css("width", "10%").text("10%");
+                progressbar.removeClass("uk-hidden");
+            },
+
+            progress: function(percent) {
+                percent = Math.ceil(percent);
+                bar.css("width", percent+"%").text(percent+"%");
+            },
+
+            allcomplete: function(response) {
+
+                bar.css("width", "100%").text("100%");
+
+                setTimeout(function(){
+                    progressbar.addClass("uk-hidden");
+                }, 10000);
+
+                alert("Upload Completed")
+            }
+        };
+
+        var select = UIkit.uploadSelect($("#upload-select"), settings),
+            drop   = UIkit.uploadDrop($("#upload-drop"), settings);
+    });
+
+</script>
+</html>

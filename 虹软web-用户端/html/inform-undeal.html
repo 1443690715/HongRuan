@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>待处理</title>
+	<script src="../js/uikit.min.js" type="text/javascript"></script>
+	<script src="../js/uikit.js" type="text/javascript"></script>
+	<link rel="stylesheet" type="text/css" href="../css/uikit.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/uikit.css">
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../css/inform-undeal.css">
+	<script src="../js/quit.js" type="text/javascript"></script>
+	<style type="text/css">
+		@media screen and (max-width:1024px){
+			#nav-item ul li{
+				width:100px;
+				height:60px;
+				font-size:16px;
+				color:white;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div id="navigation">
+			<div id="logo"><img src="../images/logo.png"></div>
+			<div id="nav-item">
+				<ul>
+					<li><a href="home page.html">首页</a></li>
+					<li><a href="online-classify.html">线上培训</a></li>
+					<li><a href="training-registration.html">线下培训</a></li>
+					<li><a href="online-test.html">我的考试</a></li>
+					<li><a href="inform-undeal.html">我的通知</a></li>
+				</ul>
+			</div>
+			<div id="nav-pic" data-uk-dropdown>
+				<div id="nav-head"></div>
+				<div id="nav-quit" class="uk-dropdown uk-dropdown-small">
+					<ul>
+						<li><a href="">个人中心</a></li>
+						<li><a href="">内训师回答</a></li>
+						<li><a href="">退出</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="user-information" class="uk-grid">
+			<div class="uk-width-1-10 uk-width-medium-1-10 uk-margin-top"></div>
+			<div id="user-head" class="uk-width-1-10 uk-width-medium-1-10 uk-margin-top"></div>
+			<div id=user-mess class="uk-width-2-10 uk-width-medium-2-10 uk-margin-top">
+				<div id="user-name" class="uk-text-center uk-margin-top uk-margin-left">张三</div>
+				<div id="user-position" class="uk-grid uk-margin-top  uk-margin-left">
+					<div id="user-posi" class="uk-width-1-2 uk-width-medium-1-2 uk-text-truncate">经理</div>
+					<div id="user-depart" class="uk-width-1-2 uk-width-medium-1-2 uk-text-truncate">开发部</div>
+				</div>
+			</div>
+			<div id="mess-num" class="uk-grid uk-width-4-10 uk-width-medium-4-10 uk-margin-top">
+				<div id="mess-num1" class="uk-width-1-3 uk-width-medium-1-3 uk-text-truncate"><img src="../images/icon.png">积分：10</div>
+				<div id="mess-num1" class="uk-width-1-3 uk-width-medium-1-3 uk-text-truncate"><img src="../images/icon.png">课程：60</div>
+				<div id="mess-num1" class="uk-width-1-3 uk-width-medium-1-3 uk-text-truncate"><img src="../images/icon.png">关注：39</div>
+			</div>
+		</div>
+		<div id="sub-title" class="uk-grid">
+			<div class="uk-width-1-10 uk-width-medium-1-10"></div>
+			<div class="uk-width-1-10 uk-width-medium-1-10"><a href="inform-undeal.html">待处理</a></div>
+			<div class="uk-width-1-10 uk-width-medium-1-10"><a href="inform-deal.html">已处理</a></div>
+		</div>
+		<div id="content">
+			<div id="content-title" class="uk-grid uk-width-9-10 uk-margin-top uk-margin-large-left">
+				<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">线上培训</div>
+				<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">线下培训</div>
+				<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">回答评论</div>
+				<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">受邀回答</div>
+				<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">考试通知</div>
+				<div class="uk-width-1-6 uk-width-medium-1-6 uk-text-truncate">系统通知</div>
+			</div>
+			<div id="content-con1" class="uk-grid uk-width-9-10 uk-margin-large-left">
+				<div class="uk-width-1-6 uk-width-medium-1-6"></div>
+				<div id="content-body" class="uk-width-4-6 uk-width-medium-4-6">
+					<h1 class="uk-margin-large-top">Bootstrap课程开课了！</h1>
+					<div class="uk-margin-large-top">Bootstrap课程：</div>
+					<div class="uk-margin-large-top">2017年08月21日开课</div>
+					<div class="uk-margin-large-top"><p>开课信息：将在网上进行授课，同时线下安排相关考试。</p></div>
+					<div id="content-btn" class="uk-grid uk-width-5-6 uk-width-medium-5-6 uk-margin-large-left uk-margin-large-top">
+						<input type="button" name="btn-confirm" id="btn-confirm" value="确认处理" class="uk-width-1-4 uk-width-medium-1-4 uk-text-center uk-text-truncate">
+						<input type="button" name="btn-delete" id="btn-delete" value="删除" class="uk-width-1-4 uk-width-medium-1-4">
+					</div>
+				</div>
+			</div>
+			<div id="content-con2" class="uk-grid uk-width-9-10 uk-margin-large-left">
+				<div class="uk-width-1-6 uk-width-medium-1-6"></div>
+				<div id="content-body" class="uk-width-4-6 uk-width-medium-4-6">
+					<h1 class="uk-margin-large-top">JS课程开课了！</h1>
+					<div class="uk-margin-large-top">JS课程：</div>
+					<div class="uk-margin-large-top">2017年09月01日开课</div>
+					<div class="uk-margin-large-top"><p>开课信息：将在网上进行授课，同时线下安排相关考试。</p></div>
+					<div id="content-btn" class="uk-grid uk-width-5-6 uk-width-medium-5-6 uk-margin-large-left uk-margin-large-top">
+						<input type="button" name="btn-confirm" id="btn-confirm" value="确认处理" class="uk-width-1-4 uk-width-medium-1-4 uk-text-center uk-text-truncate">
+						<input type="button" name="btn-delete" id="btn-delete" value="删除" class="uk-width-1-4 uk-width-medium-1-4">
+					</div>
+				</div>
+			</div>
+			<div id="content-con3" class="uk-grid uk-width-9-10 uk-margin-large-left">
+				<div class="uk-width-1-6 uk-width-medium-1-6"></div>
+				<div id="content-body" class="uk-width-4-6 uk-width-medium-4-6">
+					<h2 class="uk-margin-large-top">如何解决图片的缩放问题？</h2>
+					<div class="uk-margin-large-top">IT精英王晓泽的回答：图片不能缩放的同学注意，在 Bootstrap 版本 3 中，通过为图片添加 .img-responsive 类可以让图片支持响应式布局。</div>
+					<div class="uk-margin-large-top">2017-04-04</div>
+					<div id="content-btn" class="uk-grid uk-width-5-6 uk-width-medium-5-6 uk-margin-large-left uk-margin-large-top">
+						<input type="button" name="btn-confirm" id="btn-confirm" value="确认处理" class="uk-width-1-4 uk-width-medium-1-4 uk-text-center uk-text-truncate">
+						<input type="button" name="btn-delete" id="btn-delete" value="删除" class="uk-width-1-4 uk-width-medium-1-4">
+					</div>
+				</div>
+			</div>
+			<div id="content-con4" class="uk-grid uk-width-9-10 uk-margin-large-left">
+				<div class="uk-width-1-6 uk-width-medium-1-6"></div>
+				<div id="content-body" class="uk-width-4-6 uk-width-medium-4-6">
+					<h2 class="uk-margin-large-top">您收到了来自李月的邀请</h2>
+					<div class="uk-margin-large-top">李月邀请您回答她的问题</div>
+					<div class="uk-margin-large-top">请问Myfocus焦点图不能马上播放，要怎么解决？</div>
+					<div class="uk-margin-large-top"><p>2017-05-30</p></div>
+					<div id="content-btn" class="uk-grid uk-width-5-6 uk-width-medium-5-6 uk-margin-large-left uk-margin-large-top">
+						<input type="button" name="btn-confirm" id="btn-confirm" value="确认处理" class="uk-width-1-4 uk-width-medium-1-4 uk-text-center uk-text-truncate">
+						<input type="button" name="btn-delete" id="btn-delete" value="删除" class="uk-width-1-4 uk-width-medium-1-4">
+					</div>
+				</div>
+			</div>
+			<div id="content-con5" class="uk-grid uk-width-9-10 uk-margin-large-left">
+				<div class="uk-width-1-6 uk-width-medium-1-6"></div>
+				<div id="content-body" class="uk-width-4-6 uk-width-medium-4-6">
+					<h1 class="uk-margin-large-top">UIKIT课程的考试即将开始！</h1>
+					<div class="uk-margin-large-top">UIKIT课程考试：</div>
+					<div class="uk-margin-large-top">2017年08月21日考试</div>
+					<div class="uk-margin-large-top"><p>考试信息：将在网上进行考试。</p></div>
+					<div id="content-btn" class="uk-grid uk-width-5-6 uk-width-medium-5-6 uk-margin-large-left uk-margin-large-top">
+						<input type="button" name="btn-confirm" id="btn-confirm" value="确认处理" class="uk-width-1-4 uk-width-medium-1-4 uk-text-center uk-text-truncate">
+						<input type="button" name="btn-delete" id="btn-delete" value="删除" class="uk-width-1-4 uk-width-medium-1-4">
+					</div>
+				</div>
+			</div>
+			<div id="content-con6" class="uk-grid uk-width-9-10 uk-margin-large-left">
+				<div class="uk-width-1-6 uk-width-medium-1-6"></div>
+				<div id="content-body" class="uk-width-4-6 uk-width-medium-4-6">
+					<h1 class="uk-margin-large-top">临时通知</h1>
+					<div class="uk-margin-large-top">Bootstrap课程取消通知：</div>
+					<div class="uk-margin-large-top">由于软件等原因，Bootstrap课程临时取消</div>
+					<div class="uk-margin-large-top"><p>2017-05-29</p></div>
+					<div id="content-btn" class="uk-grid uk-width-5-6 uk-width-medium-5-6 uk-margin-large-left uk-margin-large-top">
+						<input type="button" name="btn-confirm" id="btn-confirm" value="确认处理" class="uk-width-1-4 uk-width-medium-1-4 uk-text-center uk-text-truncate">
+						<input type="button" name="btn-delete" id="btn-delete" value="删除" class="uk-width-1-4 uk-width-medium-1-4">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript">
+	var contentdiv=document.getElementById("content-title").getElementsByTagName("div");
+	// for(var i=0;i<contentdiv.length;i++){
+	// 	contentdiv[i].index=i;
+	// 	contentdiv[i].onclick=function(){
+	// 		change(this.index);
+
+	// 	}
+	// }
+	// function change(index){
+	// 	for(var i=1;i<=contentdiv.length;i++){
+	// 		var a=document.getElementById("content-con"+i);
+	// 		a.display.style="none";
+	// 	}
+	// 	document.getElementById("content-con2").style.display="block";
+	// }
+	contentdiv[0].onclick=function(){
+		document.getElementById("content-con1").style.display="block";
+		document.getElementById("content-con2").style.display="none";
+		document.getElementById("content-con3").style.display="none";
+		document.getElementById("content-con4").style.display="none";
+		document.getElementById("content-con5").style.display="none";
+		document.getElementById("content-con6").style.display="none";
+	}
+	contentdiv[1].onclick=function(){
+		document.getElementById("content-con2").style.display="block";
+		document.getElementById("content-con1").style.display="none";
+		document.getElementById("content-con3").style.display="none";
+		document.getElementById("content-con4").style.display="none";
+		document.getElementById("content-con5").style.display="none";
+		document.getElementById("content-con6").style.display="none";
+	}
+	contentdiv[2].onclick=function(){
+		document.getElementById("content-con3").style.display="block";
+		document.getElementById("content-con1").style.display="none";
+		document.getElementById("content-con2").style.display="none";
+		document.getElementById("content-con4").style.display="none";
+		document.getElementById("content-con5").style.display="none";
+		document.getElementById("content-con6").style.display="none";
+	}
+	contentdiv[3].onclick=function(){
+		document.getElementById("content-con4").style.display="block";
+		document.getElementById("content-con1").style.display="none";
+		document.getElementById("content-con3").style.display="none";
+		document.getElementById("content-con2").style.display="none";
+		document.getElementById("content-con5").style.display="none";
+		document.getElementById("content-con6").style.display="none";
+	}
+	contentdiv[4].onclick=function(){
+		document.getElementById("content-con5").style.display="block";
+		document.getElementById("content-con1").style.display="none";
+		document.getElementById("content-con3").style.display="none";
+		document.getElementById("content-con4").style.display="none";
+		document.getElementById("content-con2").style.display="none";
+		document.getElementById("content-con6").style.display="none";
+	}
+	contentdiv[5].onclick=function(){
+		document.getElementById("content-con6").style.display="block";
+		document.getElementById("content-con1").style.display="none";
+		document.getElementById("content-con3").style.display="none";
+		document.getElementById("content-con4").style.display="none";
+		document.getElementById("content-con5").style.display="none";
+		document.getElementById("content-con2").style.display="none";
+	}
+</script>
+</html>

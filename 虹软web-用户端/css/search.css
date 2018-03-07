@@ -1,0 +1,149 @@
+	*{
+		margin:0;
+		padding:0;
+	}
+	li{list-style: none;float:left;}
+	a{text-decoration:none;}
+	a:hover{text-decoration:none;}
+	#container{
+		width:100%;
+		height: 1100px;
+		font-family: 微软雅黑;
+		font-size: 14px;
+		background-color:white;
+	}
+	#navigation{
+		background-color: #363636;
+		width:100%;
+		height:60px;
+	}
+	#logo{
+		width:15%;
+		height:60px;
+		position: absolute;
+		top:-3%;
+	}
+	#searchall{
+		width:100%;
+		height:30%;
+		position: absolute;
+		top:60px;
+		background-color:#F2F2F2;
+	}
+	#searchbox{
+		height:35%;
+		width:54.8%;
+		background-color: white;
+		margin:50px auto;
+		border-radius: 10px;
+	}
+	#searchbox i{
+		height:40px;
+		width:5%;
+		float:left;
+		margin-top:10px;
+		margin-left:10px;
+	}
+	#search-text{
+		height:100%;
+		width:60%;
+		border:0;
+		float: left;
+		outline: none;
+	}
+	#search-button{
+		height:100%;
+		width:20%;
+		border:0;
+		float: right;
+		font-size:28px;
+		font-weight:bold;
+		color:white;
+		background-color: #E4153F;
+		border-radius:0 10px 10px 0;
+		outline: none;
+	}
+	#small-label{
+		width:50%;
+		height:16px;
+		position:relative;
+		top:-40px;
+		left:25%;
+		min-width: 400px;
+	}
+	#small-label li{
+		margin-right:12px;
+		color:#BCBCBC;
+	}
+	#search-warp{
+		margin-top:20%;
+	}
+	#search-nav{
+		text-align: center;
+	}
+	#search-nav a{
+		color:red;
+		font-size: 18px;
+	}
+	#search-related{
+		width:60%;
+		height:30px;
+		line-height: 30px;
+		background-color: #F2F2F2;
+		margin-top:2%;
+		margin-left:20%;
+		padding-left: 24px;
+		color:#333333;
+		border-radius:5px;
+	}
+	h2{
+		width:100px;
+		position:relative;
+		margin-top:2%;
+		left:20%;
+		font-weight: normal;
+	}
+	#course-body{
+		width:70%;
+		height:600px;
+		margin-right:auto;
+		margin-left:auto;
+		margin-top:5%;
+		padding-left: 80px;
+	}
+	span{
+		color:red;
+	}
+	.course-item{
+		height:170px;
+		padding-top:50px;
+		border-top:1px solid #797979;
+	}
+	#item-left{
+		width:35%;
+		height:117px;
+		float:left;
+		padding-left:20px;
+	}
+	#item-left img{
+		width:100%;
+		height:117px;
+	}
+	#item-right{
+		float:right;
+		width:60%;
+		height:115px;
+		overflow: hidden;
+	}
+	#item-right div{
+		margin-bottom:6px;
+	}
+	#search-more{
+		width:70%;
+		text-align: center;
+		margin-left:18%;
+		margin-top:60px;
+		padding-top: 40px;
+		border-top:1px solid #797979;
+		color:#6699FF;
+	}

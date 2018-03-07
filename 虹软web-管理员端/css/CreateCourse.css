@@ -1,0 +1,68 @@
+#content{
+	position:relative;
+	left:30px;
+   				/*border:0.1px solid red;*/
+}
+#mycontainer{
+
+}
+#myrightContainer{
+  				 /*border:0.1px solid blue;*/
+}
+.uk-width-3-10{
+	   		/*border:0.1px solid green;*/
+}
+.uk-width-7-10{
+	  		 /*border:0.1px solid yellow;*/
+}
+#text3{
+   position:relative;
+   left:24px;
+}
+#text4{
+   position:relative;
+   left:-2px;
+}
+#deleteBtn{
+	border-radius:3px;
+   position:relative;
+   left:42px;
+}
+#addBtn{
+	border-radius:3px;
+   position:relative;
+   left:24px;	
+}
+textarea{
+	resize:none;
+}
+#myPanel{
+	background-color:white;
+}
+#mask{
+	// display:none;
+	// background:white;
+	// position:relative;
+	// bottom:200px;
+	// left:200px;
+}
+#txt3-parent{
+	position:relative;
+}
+#myoption{
+	// color:white;
+	// background-color:white;
+}
+.goleft{
+	 position:relative;
+	 left:-15px;
+}
+.mygotop{
+		position:relative;
+		top:-30px;
+}
+#mysubmit{
+	height:40px;
+	 position:relative;
+	 left:50px;	
+}
